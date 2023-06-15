@@ -1,9 +1,10 @@
 "use client"
+import Link from 'next/link';
 import { LuView } from 'react-icons/lu';
 export default function VentureCardComponent({ ventureImage, ventureTitle, ventureAddress, ventureCity, venturePincode, ventureEst, ventureWebsite, key }) {
     return (
         <div className="ventureCard">
-            <span className='ventureCardLink'><LuView /></span>
+            <span className='ventureCardLink'><Link href="/schools/1"><LuView /></Link></span>
             <div className="ventureCardInner">
                 <div className="ventureImg">
                     <img src={ventureImage} />

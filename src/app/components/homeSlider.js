@@ -6,6 +6,7 @@ export default function HomeSlider({ slides }) {
     const [activeSlideImg, setActiveSlideImg] = useState(slides[0].url)
     const [activeSlideText, setActiveSlideText] = useState(slides[0].description)
     const [activeSlideHeading, setActiveSlideHeading] = useState(slides[0].heading)
+    const [activeslogan, setActiveSlogan] = useState(slides[0].slogan)
 
     const homeSliderHandler = (slideImg, slideHeading, slideText) => {
         setActiveSlideImg(slideImg)
@@ -23,6 +24,7 @@ export default function HomeSlider({ slides }) {
                     <div className="row align-items-end">
                         <div className="col-md-6">
                             <h1><span>{activeSlideHeading}</span> {activeSlideText}</h1>
+                            <span className="slogan">{activeslogan}</span>
                         </div>
                         <div className="col-md-6">
                             <div className="sliderThumbs">

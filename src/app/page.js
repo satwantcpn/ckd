@@ -27,38 +27,44 @@ export default function Home() {
     {
       url: '/slide1.jpg',
       thumbUrl: '/biradhghar.png',
-      heading: 'The Commitment That was made one ',
-      description: '30th October 1902 At Malwai Bunga,Shri Darbar Sahib And Where is today.......'
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
+      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/gurudwarasahib.png',
       heading: 'Lorem Ipsum is simply dummy text',
-      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.'
+      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide1.jpg',
       thumbUrl: '/college.png',
-      heading: 'The Commitment That was made one',
-      description: '30th October 1902 At Malwai Bunga,Shri Darbar Sahib And Where is today.......'
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
+      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/school.png',
-      heading: 'Lorem Ipsum is simply dummy text',
-      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.'
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
+      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide1.jpg',
       thumbUrl: '/hospital.png',
-      heading: 'The Commitment That was made one',
-      description: '30th October 1902 At Malwai Bunga,Shri Darbar Sahib And Where is today.......'
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
+      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/orphange.png',
       heading: 'Lorem Ipsum is simply dummy text',
-      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.'
+      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
+      slogan: "SIKHI - SIKHYA - MANUKHATA"
     }
   ]
 

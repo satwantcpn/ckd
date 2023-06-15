@@ -43,7 +43,7 @@ export default function Header() {
                             <div className='navLinkBar'>
                                 <ul>
                                     <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/office-bearers">About CDKD</Link></li>
+                                    <li><Link href="/office-bearers">About CKD</Link></li>
                                     <li><Link href="/schools">Our Ventures</Link></li>
                                     <li><Link href="/gallery">Gallery</Link></li>
                                     <li><Link href="/publications">Publications</Link></li>
@@ -57,7 +57,7 @@ export default function Header() {
                 </div>
             </header>
             {
-                currentPath !== '/' ? (<div className='headerBanner'>
+                (currentPath !== '/' && currentPath !== '/schools/1') ? (<div className='headerBanner'>
                     <div className='headingBar'>
                         <p className='subSmallHeading'>Chief Khalsa Diwans</p>
                         <h2>Schools</h2>
