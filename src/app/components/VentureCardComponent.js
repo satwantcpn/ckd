@@ -1,6 +1,6 @@
 "use client"
 import { LuView } from 'react-icons/lu';
-export default function VentureCardComponent({ ventureImage, ventureTitle, ventureAddress, ventureCity, venturePincode, ventureEst, ventureWebsite }) {
+export default function VentureCardComponent({ ventureImage, ventureTitle, ventureAddress, ventureCity, venturePincode, ventureEst, ventureWebsite, key }) {
     return (
         <div className="ventureCard">
             <span className='ventureCardLink'><LuView /></span>
