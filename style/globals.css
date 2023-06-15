@@ -1041,3 +1041,7 @@ p.ftrHeading span {
 .headerBanner .headingBar h2 {
   text-transform: uppercase;
 }
+
+.homeSlider .hmSliderImg img {
+  min-height: 730px;
+}
