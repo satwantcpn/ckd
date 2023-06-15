@@ -27,43 +27,49 @@ export default function Home() {
     {
       url: '/slide1.jpg',
       thumbUrl: '/biradhghar.png',
-      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
-      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/gurudwarasahib.png',
-      heading: 'Lorem Ipsum is simply dummy text',
-      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide1.jpg',
       thumbUrl: '/college.png',
-      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
-      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/school.png',
-      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
-      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide1.jpg',
       thumbUrl: '/hospital.png',
-      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib ',
-      description: 'Stalwart of guru khalsa panth opening session of "CHIEF KHALSA DIWAN" with their vision a commitment it was made. Let see where it is Today',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/orphange.png',
-      heading: 'Lorem Ipsum is simply dummy text',
-      description: 'of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
+      heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
+      description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
+      descriptionLine2: 'With their vision a commitment was made. Let see where it is Today',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     }
   ]
@@ -74,7 +80,7 @@ export default function Home() {
       <section className='aboutSection'>
         <div className='container'>
           <div className='aboutUsOtrBox'>
-            <HeadingC lrgHeading={"Who We Are"} heading={"Cheif Khalsa Diwan Charitable Society"} />
+            <HeadingC lrgHeading={"Cheif Khalsa Diwan"} heading={"Charitable Society"} />
             <div className='aboutUs'>
               <div className='row'>
                 <div className='col-md-7'>
@@ -105,7 +111,7 @@ export default function Home() {
                   <VenturesCard ventureTitle="Hospital" ventureImage="/hospital.png" />
 
                   <div className='ventureCardsBox'>
-                    <HeadingL subSmallHeading={"Dolor Ipsum"} heading={"Our Ventures"} />
+                    <HeadingL heading={"Our Ventures"} />
                     <HeadingDescription HeadingDescription={"Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum'."} />
                   </div>
                 </div>
@@ -134,7 +140,7 @@ export default function Home() {
           <div className='serviceOtrBox'>
             <div className='row'>
               <div className='col-md-12'>
-                <HeadingC subSmallHeading={"Lorem Ipsum"} heading={"Cheif Khalsa Diwan Charitable Society"} />
+                <HeadingC subSmallHeading={""} heading={" Dummy Text The Printing"} />
                 <div className='serviceMainBox'>
                   <ServiceCard title="Donation" imgName='/donation.png' Description="There are many variations of passages of Lorem Ipsum available." />
                   <ServiceCard title="Log In" imgName='/password.png' Description="There are many variations of passages of Lorem Ipsum available." />

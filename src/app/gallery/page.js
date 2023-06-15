@@ -40,7 +40,7 @@ export default function Gallery() {
                 <div className="row">
                     {
                         galleries && galleries.map((item, index) => (
-                            <div className="col-md-4 mb-4" key={item.id}>
+                            <div className="col-md-3 mb-4" key={item.id}>
                                 <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} />
                             </div>
                         ))

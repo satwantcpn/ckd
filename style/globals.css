@@ -171,9 +171,13 @@ header {
   top: 0px;
   width: 100%;
   left: 0px;
-  background: rgb(29 3 104 / 100%);
+  background: rgb(29 3 104 / 70%);
   z-index: 999999;
   transition: all .2s linear;
+}
+
+header.InnerPage {
+  background: rgb(29 3 104 / 100%);
 }
 
 .logoBox img {
@@ -187,7 +191,7 @@ header {
 }
 
 header.stickyHeader {
-  background: rgb(29 3 104 / 90%);
+  background: rgb(29 3 104 / 70%);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -326,8 +330,17 @@ section.aboutSection {
 .aboutUsOtrBox {
   border: 2px solid #f4821f;
   border-radius: 33px;
+  background: url('/outline_malwai_bunga.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
+.aboutUsTextImg img {
+  display: inline-block;
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+}
 
 /*--- venturesSection ---*/
 
@@ -687,7 +700,7 @@ p.ftrHeading span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(255 153 51 / 80%);
+  background: rgb(255 153 51 / 40%);
   top: 0px;
   color: #fff;
   font-size: 40px;
@@ -718,7 +731,7 @@ p.ftrHeading span {
   clear: both;
   width: 100%;
   margin-bottom: 50px;
-  min-height: 350px;
+  min-height: 320px;
   background: url('/headerBanner.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
@@ -878,7 +891,6 @@ p.ftrHeading span {
 .sliderThumbs img {
   display: inline-block;
   cursor: pointer;
-  border-radius: 40px;
   width: 100%;
   max-width: 200px;
   transition: all .2s linear;
@@ -886,19 +898,41 @@ p.ftrHeading span {
   -webkit-transition: all .2s linear;
 }
 
-.sliderThumbs img:first-child {
+.sliderThumbs .sliderThumbOutr {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+}
+
+.sliderThumbs .sliderThumbOutr::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(29 3 104 / 30%);
+  transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+}
+
+.sliderThumbs .sliderThumbOutr:first-child {
   margin-left: 33%;
 }
 
-.sliderThumbs img:nth-child(5) {
+.sliderThumbs .sliderThumbOutr:nth-child(5) {
   margin-right: 5%;
 }
 
-.sliderThumbs img:last-child {
+.sliderThumbs .sliderThumbOutr:last-child {
   margin: auto;
 }
 
-.sliderThumbs img:hover {
+.sliderThumbs .sliderThumbOutr:hover img {
   transform: scale(1.1);
 }
 
@@ -929,6 +963,11 @@ p.ftrHeading span {
   color: #ff9933;
   font-weight: 600;
   font-family: 'Poppins', sans-serif !important;
+  font-size: 30px;
+  line-height: 32px;
+  padding-left: 100px;
+  box-sizing: border-box;
+  margin-top: 25px;
 }
 
 /*Venture Card*/
@@ -1047,6 +1086,8 @@ p.ftrHeading span {
 
 .headerBanner .headingBar .subSmallHeading {
   color: #fff;
+  font-size: 70px;
+  line-height: 80px;
 }
 
 .headerBanner .headingBar svg {
@@ -1064,6 +1105,8 @@ p.ftrHeading span {
 
 .headerBanner .headingBar h2 {
   text-transform: uppercase;
+  font-size: 40px;
+  line-height: 42px;
 }
 
 .homeSlider .hmSliderImg img {
@@ -1379,4 +1422,34 @@ p.ftrHeading span {
   font-size: 16px;
   line-height: 26px;
   color: #000000;
+}
+
+.sliderContentInner .slidrHeading {
+  display: block;
+  clear: both;
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+  line-height: 42px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sliderContentInner .slidrText {
+  display: block;
+  clear: both;
+  width: 100%;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.aboutUsOtrBox .headingBar h1 {
+  color: #280B7D;
+}
+
+.aboutUsOtrBox .headingBar h2 {
+  color: #FF9933;
 }

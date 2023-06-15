@@ -25,11 +25,11 @@ export default function Header() {
     }, [])
     return (
         <>
-            <header id="site_header">
+            <header id="site_header" className={`${headerClass}`}>
                 <div className='container-fluid'>
                     <div className='row alignCenter'>
                         <div className='logoBox col-md-3'>
-                            <Link href="/"><Image src="/logo.png" alt="My Image" width={360} height={80} /></Link>
+                            <Link href="/"><Image src="/logoNew.png" alt="My Image" width={360} height={80} /></Link>
                         </div>
                         <div className='navBar col-md-9'>
                             <div className='navContactBar'>
@@ -43,12 +43,12 @@ export default function Header() {
                             <div className='navLinkBar'>
                                 <ul>
                                     <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/office-bearers">About CKD</Link></li>
-                                    <li><Link href="/schools">Our Ventures</Link></li>
+                                    <li><Link href="/office-bearers">About</Link></li>
+                                    <li><Link href="/schools">Ventures</Link></li>
                                     <li><Link href="/gallery">Gallery</Link></li>
                                     <li><Link href="/publications">Publications</Link></li>
                                     <li><Link href="/contact-us">Contact Us</Link></li>
-                                    <li className='navButton'><a href="#"> <span>Carrer</span></a> </li>
+                                    <li className='navButton'><a href="#"> <span>Career</span></a> </li>
                                     <li className='navButton'><a href="#"> <span>Donation</span></a> </li>
                                 </ul>
                             </div>
@@ -59,7 +59,7 @@ export default function Header() {
             {
                 (currentPath !== '/' && currentPath !== '/schools/1') ? (<div className='headerBanner'>
                     <div className='headingBar'>
-                        <p className='subSmallHeading'>Chief Khalsa Diwans</p>
+                        <p className='subSmallHeading'>Chief Khalsa Diwan</p>
                         <h2>Schools</h2>
                         <svg width="496" height="51" viewBox="0 0 496 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L39.6369 50L92.0726 1L144.508 50L188.665 1L238.341 50L293.536 1L340.453 50L390.128 1L450.844 50L495 1" stroke="white" /></svg>
                     </div>

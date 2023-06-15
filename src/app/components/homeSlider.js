@@ -5,13 +5,15 @@ import { useState } from "react"
 export default function HomeSlider({ slides }) {
     const [activeSlideImg, setActiveSlideImg] = useState(slides[0].url)
     const [activeSlideText, setActiveSlideText] = useState(slides[0].description)
+    const [activeSlideText2, setActiveSlideText2] = useState(slides[0].descriptionLine2)
     const [activeSlideHeading, setActiveSlideHeading] = useState(slides[0].heading)
     const [activeslogan, setActiveSlogan] = useState(slides[0].slogan)
 
-    const homeSliderHandler = (slideImg, slideHeading, slideText) => {
+    const homeSliderHandler = (slideImg, slideHeading, slideText, slideText2) => {
         setActiveSlideImg(slideImg)
         setActiveSlideHeading(slideHeading)
         setActiveSlideText(slideText)
+        setActiveSlideText2(slideText2)
     }
 
     return (
@@ -21,16 +23,18 @@ export default function HomeSlider({ slides }) {
             </div>
             <div className="sliderContent">
                 <div className="sliderContentInner">
-                    <div className="row align-items-end">
+                    <div className="row align-items-center">
                         <div className="col-md-6">
-                            <h1><span>{activeSlideHeading}</span> {activeSlideText}</h1>
+                            <span className="slidrHeading">{activeSlideHeading}</span>
+                            <span className="slidrText">{activeSlideText}</span>
+                            <span className="slidrText">{activeSlideText2}</span>
                             <span className="slogan">{activeslogan}</span>
                         </div>
                         <div className="col-md-6">
                             <div className="sliderThumbs">
                                 {
                                     slides && slides.map((item, index) => (
-                                        <img src={item.thumbUrl} key={index} onClick={() => homeSliderHandler(item.url, item.heading, item.description)} />
+                                        <div className="sliderThumbOutr"><img src={item.thumbUrl} key={index} onClick={() => homeSliderHandler(item.url, item.heading, item.description, item.descriptionLine2)} /></div>
                                     ))
                                 }
                             </div>
