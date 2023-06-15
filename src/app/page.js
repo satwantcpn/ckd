@@ -25,7 +25,7 @@ export default function Home() {
 
   const slider = [
     {
-      url: '/slide1.jpg',
+      url: '/slide1.png',
       thumbUrl: '/biradhghar.png',
       heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
       description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
@@ -41,7 +41,7 @@ export default function Home() {
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide1.jpg',
+      url: '/slide1.png',
       thumbUrl: '/college.png',
       heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
       description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',
@@ -57,7 +57,7 @@ export default function Home() {
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide1.jpg',
+      url: '/slide1.png',
       thumbUrl: '/hospital.png',
       heading: '30th Oct 1902 Malwai Bunga Sri Darbar Sahib',
       description: 'Stalwarts of Guru Khalsa Panth held opening session of "CHIEF KHALSA DIWAN"',

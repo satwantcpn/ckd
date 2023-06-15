@@ -24,13 +24,13 @@ export default function HomeSlider({ slides }) {
             <div className="sliderContent">
                 <div className="sliderContentInner">
                     <div className="row align-items-center">
-                        <div className="col-md-6">
+                        <div className="col-md-7">
                             <span className="slidrHeading">{activeSlideHeading}</span>
                             <span className="slidrText">{activeSlideText}</span>
                             <span className="slidrText">{activeSlideText2}</span>
                             <span className="slogan">{activeslogan}</span>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-5">
                             <div className="sliderThumbs">
                                 {
                                     slides && slides.map((item, index) => (

@@ -965,7 +965,7 @@ p.ftrHeading span {
   font-family: 'Poppins', sans-serif !important;
   font-size: 30px;
   line-height: 32px;
-  padding-left: 100px;
+  padding-left: 0px;
   box-sizing: border-box;
   margin-top: 25px;
 }
@@ -1452,4 +1452,10 @@ p.ftrHeading span {
 
 .aboutUsOtrBox .headingBar h2 {
   color: #FF9933;
+}
+
+@media (max-width:1650px) {
+  .sliderThumbs img {
+    max-width: 180px;
+  }
 }

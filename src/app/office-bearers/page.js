@@ -11,8 +11,7 @@ export default function OfficeBearers() {
     }
     return (
         <main>
-            <div className="container">
-                <Heading subSmallHeading="Lorem Ipsum" heading=" Dummy Text The Printing" />
+            <div className="container pt-4">
                 <div className="row">
                     <div className="col-md-4">
                         <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
