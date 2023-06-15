@@ -184,6 +184,10 @@ header {
   height: auto;
 }
 
+#site_header .navBar {
+  margin-left: auto;
+}
+
 header.stickyHeader {
   background: rgb(29 3 104 / 90%);
   padding-top: 10px;
