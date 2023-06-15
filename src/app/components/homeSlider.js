@@ -34,7 +34,7 @@ export default function HomeSlider({ slides }) {
                             <div className="sliderThumbs">
                                 {
                                     slides && slides.map((item, index) => (
-                                        <div className="sliderThumbOutr"><img src={item.thumbUrl} key={index} onClick={() => homeSliderHandler(item.url, item.heading, item.description, item.descriptionLine2)} /></div>
+                                        <div className="sliderThumbOutr" key={index}><img src={item.thumbUrl} onClick={() => homeSliderHandler(item.url, item.heading, item.description, item.descriptionLine2)} /></div>
                                     ))
                                 }
                             </div>
