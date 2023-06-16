@@ -6,54 +6,38 @@ export default function SingleVenture() {
     const memberList = [
         {
             id: 1,
-            memberImage: '/m1.jpg',
-            memberName: 'Dapinder Kaur',
-            memberDesignation: 'Principal',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            memberImage: '/bgm1.png',
+            memberName: 'S. Jit Singh Saraf',
+            memberDesignation: 'Management Committee',
+            ventureName: 'Bhai Vir Singh Birdhghar',
             highlight: true
         },
         {
             id: 2,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/bgm2.png',
+            memberName: 'S. Charanjit Singh',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Bhai Vir Singh Birdhghar',
             highlight: false
         },
         {
             id: 3,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/bgm3.png',
+            memberName: 'S. Amrik Singh Chawla',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
-            highlight: false
-        },
-        {
-            id: 4,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
-            memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
-            highlight: false
-        },
-        {
-            id: 5,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
-            memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Bhai Vir Singh Birdhghar',
             highlight: false
         }
     ]
     return (
         <>
-            <Header pageTitle={"Birdh Ghar"} />
+            <Header pageTitle={"Bhai Vir Singh Birdhghar"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
-                        <h1>Birdh Ghar</h1>
-                        <span className="ventureLocation">(Majitha Road Bypass)</span>
+                        <h1>Bhai Vir Singh Birdhghar</h1>
+                        <span className="ventureLocation">(Tarn Taran - 143001)</span>
                     </div>
                 </div>
                 <div className="ventureBannerStip">
@@ -61,25 +45,25 @@ export default function SingleVenture() {
                         <div className="stripIcon">
                             <img src="/location.png" alt="icons" />
                         </div>
-                        <span>Majitha Road Bypass, Amritsar - 143001</span>
+                        <span>Tarn Taran - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/telephone.png" alt="icons" />
                         </div>
-                        <span>0183-2570328, 6239652494</span>
+                        <span>0183-2220539</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/email_icon.png" alt="icons" />
                         </div>
-                        <span>sghps_mrbp@yahoo.com; 20126@cbseshiksha.in</span>
+                        <span>info@chiefkhalsadiwan.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/Internet.png" alt="icons" />
                         </div>
-                        <span>www.sghpsmajitharoadbypass.edu.in</span>
+                        <span>https://chiefkhalsadiwan.com/</span>
                     </div>
                 </div>
             </section>

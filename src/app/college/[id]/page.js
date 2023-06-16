@@ -6,54 +6,54 @@ export default function SingleCollege() {
     const memberList = [
         {
             id: 1,
-            memberImage: '/m1.jpg',
-            memberName: 'Dapinder Kaur',
+            memberImage: '/cm1.png',
+            memberName: 'Dr. Rajiv Mahajan',
             memberDesignation: 'Principal',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'C.K.D. Institute of Management & Technology (C.K.D.I.M.T. Amritsar)',
             highlight: true
         },
         {
             id: 2,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/cm2.png',
+            memberName: 'S. Swinder Singh Kathunangal (Ex M.L.A.)',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'C.K.D. Institute of Management & Technology (C.K.D.I.M.T. Amritsar)',
             highlight: false
         },
         {
             id: 3,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/cm3.png',
+            memberName: 'Dr. Tarvinder Singh Manochahal',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'C.K.D. Institute of Management & Technology (C.K.D.I.M.T. Amritsar)',
             highlight: false
         },
         {
             id: 4,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/cm4.png',
+            memberName: 'Dr. Sukhbir Kaur Mahal',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'C.K.D. Institute of Management & Technology (C.K.D.I.M.T. Amritsar)',
             highlight: false
         },
         {
             id: 5,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/cm5.png',
+            memberName: 'S. Umrao Singh Dhillon',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'C.K.D. Institute of Management & Technology (C.K.D.I.M.T. Amritsar)',
             highlight: false
         }
     ]
     return (
         <>
-            <Header pageTitle={"C.K.D. Institute Of Management & Technology"} />
+            <Header pageTitle={"C.K.D. Institute Of Management & Technology"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>C.K.D. Institute Of Management & Technology</h1>
-                        <span className="ventureLocation">(Majitha Road Bypass)</span>
+                        <span className="ventureLocation">(C.K.D.I.M.T. Amritsar)</span>
                     </div>
                 </div>
                 <div className="ventureBannerStip">
@@ -61,25 +61,25 @@ export default function SingleCollege() {
                         <div className="stripIcon">
                             <img src="/location.png" alt="icons" />
                         </div>
-                        <span>Majitha Road Bypass, Amritsar - 143001</span>
+                        <span>C.K.D.I.M.T, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/telephone.png" alt="icons" />
                         </div>
-                        <span>0183-2570328, 6239652494</span>
+                        <span>0183-2560020, 9876146321</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/email_icon.png" alt="icons" />
                         </div>
-                        <span>sghps_mrbp@yahoo.com; 20126@cbseshiksha.in</span>
+                        <span>ckdimtasr2223@gmail.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/Internet.png" alt="icons" />
                         </div>
-                        <span>www.sghpsmajitharoadbypass.edu.in</span>
+                        <span>www.ckdimt.com</span>
                     </div>
                 </div>
             </section>

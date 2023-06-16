@@ -780,7 +780,8 @@ p.ftrHeading span {
 }
 
 .memberItem .memberPopupTrigger,
-.galleryCard .galleryCardLink {
+.galleryCard .galleryCardLink,
+.founderCard .founderCardLink {
   position: absolute;
   left: 0px;
   width: 100%;
@@ -804,7 +805,8 @@ p.ftrHeading span {
 }
 
 .memberItem:hover .memberPopupTrigger,
-.galleryCard:hover .galleryCardLink {
+.galleryCard:hover .galleryCardLink,
+.founderCard:hover .founderCardLink {
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -1086,6 +1088,7 @@ p.ftrHeading span {
   overflow: hidden;
   position: relative;
   background: #fff;
+  height: 100%;
 }
 
 .ventureCardInner {
@@ -1438,6 +1441,7 @@ p.ftrHeading span {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  justify-content: center;
 }
 
 .singleVMemberItem {
@@ -1696,4 +1700,73 @@ p.ftrHeading span {
   height: 3px;
   background: #fff;
   margin: 15px auto 0px;
+}
+
+.founderOutr {
+  display: block;
+  clear: both;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(230, 236, 255, 0.9) 0%, rgba(255, 230, 209, 0.576) 100%);
+  box-shadow: 6px 9px 33px 13px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.founderCard {
+  display: block;
+  clear: both;
+  width: 100%;
+  max-width: 330px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.founderCard .founderCardInner,
+.founderCard .founderCardImg {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.founderCard .founderCardImg {
+  margin-bottom: 20px;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.founderCard .founderCardImg img {
+  display: block;
+  width: 100%;
+}
+
+.founderCard .founderCardDetail {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+.founderCard .founderCardDetail h2 {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px 0px 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #381993;
+}
+
+.founderCard .founderCardDetail h3 {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F6821F;
 }

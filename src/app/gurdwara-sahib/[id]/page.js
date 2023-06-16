@@ -47,13 +47,13 @@ export default function SingleGurdwaraSahib() {
     ]
     return (
         <>
-            <Header pageTitle={"Gurudwara Chief Khalsa Diwan"} />
+            <Header pageTitle={"Gurudwara Chief Khalsa Diwan"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
                     <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
-                        <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
-                        <span className="ventureLocation">(Majitha Road Bypass)</span>
+                        <h1>Gurudwara Chief Khalsa Diwan</h1>
+                        <span className="ventureLocation">(C.K.D. Head Office, G.T. Road)</span>
                     </div>
                 </div>
                 <div className="ventureBannerStip">
@@ -61,25 +61,25 @@ export default function SingleGurdwaraSahib() {
                         <div className="stripIcon">
                             <img src="/location.png" alt="icons" />
                         </div>
-                        <span>Majitha Road Bypass, Amritsar - 143001</span>
+                        <span>C.K.D. Head Office, G.T. Road, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/telephone.png" alt="icons" />
                         </div>
-                        <span>0183-2570328, 6239652494</span>
+                        <span>0183-2228771</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/email_icon.png" alt="icons" />
                         </div>
-                        <span>sghps_mrbp@yahoo.com; 20126@cbseshiksha.in</span>
+                        <span>info@chiefkhalsadiwan.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/Internet.png" alt="icons" />
                         </div>
-                        <span>www.sghpsmajitharoadbypass.edu.in</span>
+                        <span>https://chiefkhalsadiwan.com</span>
                     </div>
                 </div>
             </section>

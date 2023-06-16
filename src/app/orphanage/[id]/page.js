@@ -6,54 +6,54 @@ export default function SingleOrphanage() {
     const memberList = [
         {
             id: 1,
-            memberImage: '/m1.jpg',
-            memberName: 'Dapinder Kaur',
-            memberDesignation: 'Principal',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            memberImage: '/opm1.png',
+            memberName: 'Dr. Balbir Singh Saini',
+            memberDesignation: 'Superintendent',
+            ventureName: 'Central Khalsa Orphanage',
             highlight: true
         },
         {
             id: 2,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/opm2.png',
+            memberName: 'S. Waryam Singh',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Central Khalsa Orphanage',
             highlight: false
         },
         {
             id: 3,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/opm3.png',
+            memberName: 'S. Mohanjit Singh Bhalla',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Central Khalsa Orphanage',
             highlight: false
         },
         {
             id: 4,
-            memberImage: '/m2.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/opm4.png',
+            memberName: 'S. Mandip Singh Bedi',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Central Khalsa Orphanage',
             highlight: false
         },
         {
             id: 5,
-            memberImage: '/m3.jpg',
-            memberName: 'S. Rajmohinder Singh Majitha (Former M.P.)',
+            memberImage: '/hm3.png',
+            memberName: 'S. Atamjit Singh Basra',
             memberDesignation: 'Management Committee',
-            ventureName: 'Sri Guru Harkrishan Sr. Sec. Public School',
+            ventureName: 'Central Khalsa Orphanage',
             highlight: false
         }
     ]
     return (
         <>
-            <Header pageTitle={"Central Khalsa Orphanage"} />
+            <Header pageTitle={"Central Khalsa Orphanage"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
                     <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>Central Khalsa Orphanage</h1>
-                        <span className="ventureLocation">(Majitha Road Bypass)</span>
+                        <span className="ventureLocation">(Shaheed Udham Singh Chowk (Putlighar), G.T. Road, Amritsar - 143001)</span>
                     </div>
                 </div>
                 <div className="ventureBannerStip">
@@ -61,25 +61,25 @@ export default function SingleOrphanage() {
                         <div className="stripIcon">
                             <img src="/location.png" alt="icons" />
                         </div>
-                        <span>Majitha Road Bypass, Amritsar - 143001</span>
+                        <span>Shaheed Udham Singh Chowk, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/telephone.png" alt="icons" />
                         </div>
-                        <span>0183-2570328, 6239652494</span>
+                        <span>0183-2562531</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/email_icon.png" alt="icons" />
                         </div>
-                        <span>sghps_mrbp@yahoo.com; 20126@cbseshiksha.in</span>
+                        <span>orphanage@chiefkhalsadiwan.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
                             <img src="/Internet.png" alt="icons" />
                         </div>
-                        <span>www.sghpsmajitharoadbypass.edu.in</span>
+                        <span>www.centralkhalsaorphanage.org</span>
                     </div>
                 </div>
             </section>
@@ -98,22 +98,9 @@ export default function SingleOrphanage() {
             <section className="full_width_section mtop50">
                 <div className="container">
                     <div className="ventureDetailContent">
-                        <div className="ventureDCBox">
-                            <p>Education is a shared commitment among the stakeholders- motivated students, dedicated teachers, and enthusiastic parents; translating the learning of facts into learning to think, inducing a passion for learning, exploring new horizons and thus enriching lives….</p>
-                        </div>
                         <div className="venturebtmCont">
-                            <h1>Our <span>Philosophy</span></h1>
-                            <p>Sri Guru Harkrishan Sr. Sec Public School, Majitha Road by pass since its inception on April 13, 2000, has always worked along the lines of the motto of our school “Learn to Serve”. We strive to cultivate independent thoughts in our students and promote the building of character, enabling them to contribute to their communities and the nation at large in a meaningful and positive way.</p>
-                            <h1>Our <span>Mission</span></h1>
-                            <p>We believe in providing a positive learning environment and supporting academic, social, moral, and personal development using creative and innovative strategies and techniques that meet and challenge all students to achieve high academic standards focusing on personal excellence and making them lifelong learners.</p>
-                            <h1>Our <span>Vision</span></h1>
-                            <p>We believe in providing a positive learning environment and supporting academic, social, moral, and personal development using creative and innovative strategies and techniques that meet and challenge all students to achieve high academic standards focusing on personal excellence and making them lifelong learners.</p>
-                            <h1>Our <span>Goal</span></h1>
-                            <p>We believe in providing a positive learning environment and supporting academic, social, moral, and personal development using creative and innovative strategies and techniques that meet and challenge all students to achieve high academic standards focusing on personal excellence and making them lifelong learners.</p>
-                            <h1>Aesthetically Architectured <span>interior setup</span></h1>
-                            <p>Being housed in beautifully constructed buildings and pious surroundings, the school has a tranquil ambiance. The state of art infrastructural facilities of the school include a 20,000 sq. ft. basement, with a hi-tech auditorium having the capacity to seat around 150 people, fully air-conditioned and smart classrooms, music rooms, art rooms, a dance room, computer labs, big and spacious library, math, science and English language labs, lecture theatres and administrative block. A newly built ultra-modern auditorium with a capacity to accommodate 500 people is another feather added to its cap. An infrastructural marvel namely kids block is indeed an angels paradise for the tiny tots with colorfully decorated rooms & student-friendly furniture.We believe holistic development is not defined by the walls of physical classes only and to re-direct connections between what our students are learning to the real world we have the Atal Tinkering Lab (ATL) in school, wherein they get to explore, experiment, discover and learn cutting across subject boundaries.</p>
-                            <h1>Source of stamina building <span>- School grounds</span></h1>
-                            <p>We believe in providing a positive learning environment and supporting academic, social, moral, and personal development using creative and innovative strategies and techniques that meet and challenge all students to achieve high academic standards focusing on personal excellence and making them lifelong learners.</p>
+                            <p>The Central Khalsa Orphanage, Amritsar was established in 1904 with the strenuous efforts of The Chief Khalsa Diwan for the suffering humanity. A plot of land covering five acres has a secondary school named Shaheed Udham Singh Memorial Secondary School in the campus having a computer laboratory for teaching modern techniques of learning, a library, sports facilities, a gurdwara, a dispensary, Bhai Veer Singh guest house and a home for the blind (Surma Singh Ashram) established in 1936. Students have imparted education in Sikh History, Gurbani, and Music along with academics. They have excelled in various fields by achieving high-ranking posts in society.</p>
+                            <p>Bhai Vir Singh Gurmat College was established in 1979 to train dedicated Preachers, Granthies, and Ragis for the Sikh religion through three years Gurmat Course having full facilities of free boarding and lodging. The students who have been imparted Gurmat Education from this college have earned names and fame at the National as well as international levels. Dr.Inderjit Singh Gogoani has set an example of familiarity. Bhai Pardeep Singh has also brought name and fame by winning the top position in “Gawoh Sachi Bani” competition.</p>
                         </div>
 
                     </div>
