@@ -48,7 +48,7 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                                         <a href="#">About</a>
                                         <ul>
                                             <li><Link href="/"><span>History</span></Link></li>
-                                            <li><Link href="/"><span>Founders</span></Link></li>
+                                            <li><Link href="/founders"><span>Founders</span></Link></li>
                                             <li><Link href="/"><span>First Meeting</span></Link></li>
                                             <li><Link href="/office-bearers"><span>Office Bearers</span></Link></li>
                                             <li><Link href="/executive-committee"><span>Executive Committee</span></Link></li>

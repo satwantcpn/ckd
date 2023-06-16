@@ -20,7 +20,7 @@ export default function PunjabiHome() {
 
   const slider = [
     {
-      url: '/slide1.png',
+      url: '/biradhGharBanner.png',
       thumbHeading: 'ਬਿਰਧ ਘਰ',
       thumbUrl: '/biradhghar.png',
       heading: 'ਚੀਫ਼ ਖ਼ਾਲਸਾ ਦੀਵਾਨ ਬਿਰਧ ਘਰ',
@@ -64,7 +64,7 @@ export default function PunjabiHome() {
       slogan: "ਸਿੱਖੀ - ਸਿੱਖਿਆ - ਮਨੁੱਖਤਾ"
     },
     {
-      url: '/slide1.png',
+      url: '/collegeBanner.png',
       thumbUrl: '/hospital.png',
       thumbHeading: 'ਹਸਪਤਾਲ',
       heading: 'ਚੀਫ਼ ਖ਼ਾਲਸਾ ਦੀਵਾਨ ਹਸਪਤਾਲ',
@@ -75,7 +75,7 @@ export default function PunjabiHome() {
       slogan: "ਸਿੱਖੀ - ਸਿੱਖਿਆ - ਮਨੁੱਖਤਾ"
     },
     {
-      url: '/slide2.jpg',
+      url: '/orphanageBananer.png',
       thumbUrl: '/orphange.png',
       thumbHeading: 'ਅਨਾਥ ਆਸ਼ਰਮ',
       heading: 'ਚੀਫ਼ ਖ਼ਾਲਸਾ ਦੀਵਾਨ ਅਨਾਥ ਆਸ਼ਰਮ',

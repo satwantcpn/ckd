@@ -26,7 +26,7 @@ export default function Home() {
 
   const slider = [
     {
-      url: '/slide1.png',
+      url: '/biradhGharBanner.png',
       thumbHeading: 'Biradh Ghar(s)',
       thumbUrl: '/biradhghar.png',
       heading: 'Chief Khalsa Diwan Biradh Ghar(s)',
@@ -70,7 +70,7 @@ export default function Home() {
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide1.png',
+      url: '/collegeBanner.png',
       thumbUrl: '/hospital.png',
       thumbHeading: 'Hospitals',
       heading: 'Chief Khalsa Diwan Hospitals',
@@ -81,7 +81,7 @@ export default function Home() {
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide2.jpg',
+      url: '/orphanageBananer.png',
       thumbUrl: '/orphange.png',
       thumbHeading: 'Orphanage',
       heading: 'Chief Khalsa Diwan Orphanage',
