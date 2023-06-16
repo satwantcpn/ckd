@@ -15,7 +15,7 @@ export default function OfficeBearers() {
             <Header pageTitle="Office Bearers" hideHeaderBanner='true' />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/office_barrier_bgImage.jpg" />
+                    <img src="/office_barrier_bgImage.png" />
                     <div className="ventureBannerContent ob_heading">
                         <h1>Chief Khalsa Diwan</h1>
                         <h2>Office Bearers</h2>
