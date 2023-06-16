@@ -224,7 +224,15 @@ header.stickyHeader .navContactBar {
 
 .navLinkBar ul {
   margin: 0px;
-  column-gap: 40px;
+  column-gap: 0px;
+}
+
+.navLinkBar ul>li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navLinkBar ul>li:nth-last-child(2) {
+  margin-right: 15px;
 }
 
 .navContactBar ul li,
@@ -686,21 +694,13 @@ p.ftrHeading span {
   border-radius: 10px;
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 40px;
-  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 40px;
   overflow: hidden;
   height: 100%;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 
-.memberItem::after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 25px;
-  background: #FFE6D1;
-}
 
 .memberItemRight img {
   display: block;
@@ -1007,6 +1007,7 @@ p.ftrHeading span {
   top: 0px;
   left: 0px;
   letter-spacing: 0.5px;
+  font-size: 18px;
 }
 
 .sliderThumbs .sliderThumbOutr::before {
@@ -1331,6 +1332,30 @@ p.ftrHeading span {
   line-height: 80px;
 }
 
+.ventureBannerContent.ob_heading h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 42px;
+  color: #280B7D;
+  font-weight: 800;
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.ventureBannerContent.ob_heading svg {
+  display: block;
+  clear: both;
+  width: 100%;
+  max-width: 120px;
+  margin: 0px auto;
+}
+
+.ventureBannerContent.ob_heading svg path {
+  stroke: #fff;
+  stroke-width: 5px;
+}
+
 .ventureBannerContent .ventureLocation {
   display: block;
   clear: both;
@@ -1421,6 +1446,21 @@ p.ftrHeading span {
   overflow: hidden;
   padding: 15px;
   box-sizing: border-box;
+}
+
+.memberItem .cusDes {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  padding: 5px 20px;
+  background: #ff9933;
+  font-weight: 600;
 }
 
 .sVMImg {
@@ -1602,4 +1642,24 @@ p.ftrHeading span {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
+}
+
+.commingSoon {
+  display: block;
+  clear: both;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0px auto;
+  background: #ff99333b;
+  padding: 40px;
+  border-radius: 20px;
+  color: #280b7d;
+}
+
+.navContactBar ul li.langIcon img {
+  display: inline-block;
+  width: 100%;
+  max-width: 45px;
+  cursor: pointer;
 }

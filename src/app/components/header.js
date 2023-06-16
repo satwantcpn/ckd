@@ -38,6 +38,7 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                                     <li> <a href="tel:6283282077"> <FontAwesomeIcon icon={faMobileScreen} width={12} /> +91-6283282077 <span> (Director Office) </span> </a></li>
                                     <li> <a href="#"> <FontAwesomeIcon icon={faMobileScreen} width={12} /> +91-183-2228771 </a></li>
                                     <li> <a href="mailto:info@cheikhalsadiwan.com"> <FontAwesomeIcon icon={faEnvelope} width={15} /> info@cheikhalsadiwan.com </a></li>
+                                    <li className='langIcon'><Link href="/home-punjabi"><img src='/languageNew.png' alt="Language Icon" /></Link></li>
                                 </ul>
                             </div>
                             <div className='navLinkBar'>
@@ -71,8 +72,8 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                                     <li><Link href="/gallery">Gallery</Link></li>
                                     <li><Link href="/publications">Publications</Link></li>
                                     <li><Link href="/contact-us">Contact Us</Link></li>
-                                    <li className='navButton'><a href="#"> <span>Career</span></a> </li>
-                                    <li className='navButton'><a href="#"> <span>Donation</span></a> </li>
+                                    <li className='navButton'><Link href="/career"><span>Career</span></Link> </li>
+                                    <li className='navButton'><Link href="/"><span>Donation</span></Link> </li>
                                 </ul>
                             </div>
                         </div>

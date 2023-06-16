@@ -27,9 +27,9 @@ export default function Home() {
   const slider = [
     {
       url: '/slide1.png',
-      thumbHeading: 'Biradh Ghar',
+      thumbHeading: 'Biradh Ghar(s)',
       thumbUrl: '/biradhghar.png',
-      heading: 'Biradh Ghar',
+      heading: 'Biradh Ghar(s)',
       description: 'Stalwarts of Guru Khalsa Panth held opening session of',
       descriptionLine1: '"CHIEF KHALSA DIWAN"',
       descriptionLine2: 'With their vision a commitment was made.',
@@ -37,7 +37,7 @@ export default function Home() {
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/banner_gurdwara_sahib.png',
+      url: '/banner_gurdwara_sahibNew.png',
       thumbHeading: 'Gurdwara Sahib',
       thumbUrl: '/gurudwarasahib.png',
       heading: 'Gurdwara Sahib',
