@@ -217,13 +217,14 @@ header.stickyHeader .navContactBar {
 .navContactBar ul,
 .navLinkBar ul {
   display: flex;
-  gap: 20px;
+  column-gap: 20px;
   justify-content: end;
   align-items: center;
 }
 
 .navLinkBar ul {
   margin: 0px;
+  column-gap: 40px;
 }
 
 .navContactBar ul li,
@@ -231,7 +232,7 @@ header.stickyHeader .navContactBar {
   list-style: none;
 }
 
-.navContactBar ul li {
+.navContactBar ul li:not(:last-child) {
   border-right: 2px solid #303b70;
   padding-right: 10px;
 }
@@ -245,9 +246,13 @@ header.stickyHeader .navContactBar {
 }
 
 .navContactBar ul li a,
-.navLinkBar ul li a {
+.navLinkBar>ul>li>a {
   color: #fff;
   text-decoration: none;
+}
+
+.navLinkBar>ul>li {
+  position: relative;
 }
 
 .navButton a {
@@ -287,6 +292,87 @@ header.stickyHeader .navContactBar {
 
 .navButton a:hover {
   color: #FF9933 !important;
+}
+
+.navLinkBar ul li>ul {
+  position: absolute;
+  top: 20px;
+  display: block;
+  clear: both;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  min-width: 220px;
+  margin: 0px;
+  padding: 30px 0px 0px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  z-index: 100;
+  left: -30px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+}
+
+.navLinkBar ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+}
+
+.navLinkBar ul li>ul li {
+  display: block;
+  clear: both;
+  width: 100%;
+  border-left: 3px solid #FF9933;
+  background: #FFFFFF;
+}
+
+.navLinkBar ul li>ul li>a {
+  display: block;
+  padding: 10px 25px;
+  border-bottom: 0.5px solid rgba(246, 130, 31, 0.16);
+  color: #626262;
+  position: relative;
+}
+
+.navLinkBar ul li>ul li>a span {
+  display: block;
+  clear: both;
+  width: 100%;
+  position: relative;
+  z-index: 120;
+}
+
+.navLinkBar ul li>ul li>a::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  height: 100%;
+  background: #FF9933;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+}
+
+.navLinkBar ul li>ul li>a:hover::after {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navLinkBar ul li>ul li>a:hover {
+  color: #fff;
 }
 
 .container-lg {

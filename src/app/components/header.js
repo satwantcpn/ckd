@@ -43,8 +43,31 @@ export default function Header({ pageTitle }) {
                             <div className='navLinkBar'>
                                 <ul>
                                     <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/office-bearers">About</Link></li>
-                                    <li><Link href="/schools">Ventures</Link></li>
+                                    <li>
+                                        <a href="#">About</a>
+                                        <ul>
+                                            <li><Link href="/"><span>History</span></Link></li>
+                                            <li><Link href="/"><span>Founders</span></Link></li>
+                                            <li><Link href="/"><span>First Meeting</span></Link></li>
+                                            <li><Link href="/office-bearers"><span>Office Bearers</span></Link></li>
+                                            <li><Link href="/executive-committee"><span>Executive Committee</span></Link></li>
+                                            <li><Link href="/finance-committee"><span>Finance Committee</span></Link></li>
+                                            <li><Link href="/education-committee"><span>Education Committee</span></Link></li>
+                                            <li><Link href="/"><span>Members</span></Link></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/">Ventures</a>
+                                        <ul>
+                                            <li><Link href="/gurdwara-sahib"><span>Gurdwara Sahib</span></Link></li>
+                                            <li><Link href="/schools"><span>Schools</span></Link></li>
+                                            <li><Link href="/college"><span>Colleges</span></Link></li>
+                                            <li><Link href="/hospital"><span>Hospitals</span></Link></li>
+                                            <li><Link href="/orphanage"><span>Orphanage</span></Link></li>
+                                            <li><Link href="/birdhghar"><span>Birdh Ghar</span></Link></li>
+                                            <li><Link href="/parcharak-vidyalya"><span>Parcharak Vidyalya</span></Link></li>
+                                        </ul>
+                                    </li>
                                     <li><Link href="/gallery">Gallery</Link></li>
                                     <li><Link href="/publications">Publications</Link></li>
                                     <li><Link href="/contact-us">Contact Us</Link></li>
