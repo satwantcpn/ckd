@@ -1326,6 +1326,11 @@ p.ftrHeading span {
   color: #fff;
 }
 
+.ventureBannerContent.ob_heading h1 {
+  font-size: 70px;
+  line-height: 80px;
+}
+
 .ventureBannerContent .ventureLocation {
   display: block;
   clear: both;

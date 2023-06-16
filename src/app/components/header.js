@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-export default function Header({ pageTitle }) {
+export default function Header({ pageTitle, hideHeaderBanner }) {
     const currentPath = usePathname()
     const headerClass = currentPath === '/' ? 'homePage' : 'InnerPage'
 
@@ -80,7 +80,7 @@ export default function Header({ pageTitle }) {
                 </div>
             </header>
             {
-                (currentPath !== '/' && currentPath !== '/schools/1') ? (<div className='headerBanner'>
+                (currentPath !== '/' && currentPath !== '/schools/1' && !hideHeaderBanner) ? (<div className='headerBanner'>
                     <div className='headingBar'>
                         <p className='subSmallHeading'>Chief Khalsa Diwan</p>
                         <h2>{pageTitle}</h2>

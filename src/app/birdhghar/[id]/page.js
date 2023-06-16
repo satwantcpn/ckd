@@ -52,7 +52,7 @@ export default function SingleVenture() {
                 <div className="ventureBanner">
                     <img src="/schoolBanner.jpg" />
                     <div className="ventureBannerContent">
-                        <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
+                        <h1>Birdh Ghar</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>
                     </div>
                 </div>

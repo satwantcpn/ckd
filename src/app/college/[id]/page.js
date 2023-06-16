@@ -52,7 +52,7 @@ export default function SingleCollege() {
                 <div className="ventureBanner">
                     <img src="/schoolBanner.jpg" />
                     <div className="ventureBannerContent">
-                        <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
+                        <h1>C.K.D. Institute Of Management & Technology</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>
                     </div>
                 </div>

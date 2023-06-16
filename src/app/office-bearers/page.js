@@ -12,9 +12,17 @@ export default function OfficeBearers() {
     }
     return (
         <>
-            <Header pageTitle="Office Bearers" />
-            <main>
-                <div className="container pt-4">
+            <Header pageTitle="Office Bearers" hideHeaderBanner='true' />
+            <section className="full_width_section">
+                <div className="ventureBanner">
+                    <img src="/schoolBanner.jpg" />
+                    <div className="ventureBannerContent ob_heading">
+                        <h1>Office Bearers</h1>
+                    </div>
+                </div>
+            </section>
+            <main className="mt-4 pt-4">
+                <div className="container pt-4 mt-4">
                     <div className="row">
                         <div className="col-md-4 mb-3">
                             <MemberCard title="s. rajmohinder singh majitha (former m.p.)" designation="PATRON" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/RAJMOHINDER.png" setMemberPopup={setMemberPopup} />
