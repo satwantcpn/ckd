@@ -1,7 +1,7 @@
 import VentureCardComponent from "../components/VentureCardComponent";
 import Header from "../components/header";
 
-export default function SchoolsList() {
+export default function GurdwaraSahibList() {
 
     const schools = [
         {
@@ -43,7 +43,7 @@ export default function SchoolsList() {
     ]
     return (
         <>
-            <Header pageTitle={"Schools"} />
+            <Header pageTitle={"Gurdwara Sahib"} />
             <section className="full_width_section">
                 <div className="container">
                     <div className="row">

@@ -1,7 +1,7 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
 
-export default function SingleVenture() {
+export default function SingleCollege() {
 
     const memberList = [
         {
@@ -47,7 +47,7 @@ export default function SingleVenture() {
     ]
     return (
         <>
-            <Header pageTitle={"Sri Guru Harkrishan Sr. Sec. Public School"} />
+            <Header pageTitle={"C.K.D. Institute Of Management & Technology"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
                     <img src="/schoolBanner.jpg" />

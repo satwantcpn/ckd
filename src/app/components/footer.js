@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import GlobalButton from '../components/button'
+import Link from 'next/link';
 
 export default function Footer() {
 
@@ -52,13 +53,13 @@ export default function Footer() {
               <div className='footerColumnBox'>
                 <p className='ftrHeading'>Our <span>  Ventures </span></p>
                 <ul>
-                  <li> <a href=''> Gurudwara Sahib </a> </li>
-                  <li> <a href=''> Schools </a> </li>
-                  <li> <a href=''> Colleges </a> </li>
-                  <li> <a href=''> Hospitals </a> </li>
-                  <li> <a href=''> Orphange </a> </li>
-                  <li> <a href=''> Biradh Ghar </a> </li>
-                  <li> <a href=''> Parcharak Vidalya </a> </li>
+                  <li> <Link href="/gurdwara-sahib">Gurudwara Sahib</Link></li>
+                  <li> <Link href="/schools"> Schools </Link> </li>
+                  <li> <Link href="/college"> Colleges </Link> </li>
+                  <li> <Link href="/hospital"> Hospitals </Link> </li>
+                  <li> <Link href="/orphanage"> Orphange </Link> </li>
+                  <li> <Link href="/birdhghar"> Biradh Ghar </Link> </li>
+                  <li> <Link href="/parcharak-vidyalya"> Parcharak Vidalya </Link> </li>
                 </ul>
               </div>
             </div>

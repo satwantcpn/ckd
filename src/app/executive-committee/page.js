@@ -5,58 +5,52 @@ import MemberCard from "../components/memberCard";
 import Image from 'next/image';
 import Header from "../components/header";
 
-export default function OfficeBearers() {
+export default function ExecutiveCommittee() {
     const [memberPopup, setMemberPopup] = useState(false)
     const memberPopClose = () => {
         setMemberPopup(false)
     }
     return (
         <>
-            <Header pageTitle="Office Bearers" />
+            <Header pageTitle="Executive Committee" />
             <main>
                 <div className="container pt-4">
                     <div className="row">
                         <div className="col-md-4">
-                            <MemberCard title="s. rajmohinder singh majitha (former m.p.)" designation="PATRON" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/RAJMOHINDER.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="dr. inderbir singh nijjar" designation="PRESIDENT" email="inderbirnijjar@yahoo.co.in" city="AMRITSAR" memberImage="/INDERBIR.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. amarjit singh banga" designation="VICE PRESIDENT" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/AMARJIT.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. jagjit singh" designation="VICE PRESIDENT" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/JAGJIT.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. swinder singh kathunangal (ex m.l.a.)" designation="HONORARY SECRETARY CKDCS" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/SWINDER.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. ajit singh basra" designation="HONORARY SECRETARY CKDCS" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/AJIT_SINGH_BASRA.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. sukhdev singh mattewal" designation="ADDITIONAL HONORARY SECRETARY" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/SUKHDEV.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. waryam singh" designation="ADDITIONAL HONORARY SECRETARY" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/S._WARYAM_SINGH.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. harjit singh" designation="ADDITIONAL HONORARY SECRETARY" email="sarbjitchhina@yahoo.co.in" city="TARN TARAN" memberImage="/HARJIT_SINGH.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. harbhajan singh banga" designation="ADDITIONAL HONORARY SECRETARY" email="sarbjitchhina@yahoo.co.in" city="LUDHIANA" memberImage="/HARBHAJAN.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. jaspal singh dhillon" designation="ADDITIONAL HONORARY SECRETARY" email="jaspaldhillon97@gmail.com" city="AMRITSAR" memberImage="/S_JASPAL_SINGH_DHILLON.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                         <div className="col-md-4">
-                            <MemberCard title="s. inderpreet singh anand" designation="ADDITIONAL HONORARY SECRETARY" email="inderpreetanand77@gmail.com" city="AMRITSAR" memberImage="/INDERPREET.png" setMemberPopup={setMemberPopup} />
-                        </div>
-                        <div className="col-md-4">
-                            <MemberCard title="er. jaspal singh" designation="HONORARY JOINT SECRETARY" email="jaspalsingh003@gmail.com" city="AMRITSAR" memberImage="/JASPAL_SINGH.png" setMemberPopup={setMemberPopup} />
-                        </div>
-                        <div className="col-md-4">
-                            <MemberCard title="s. sukhjinder singh" designation="HONORARY JOINT SECRETARY" email="jaspalsingh003@gmail.com" city="AMRITSAR" memberImage="/S_SUKHJINDER_SINGH.png" setMemberPopup={setMemberPopup} />
+                            <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                     </div>
                 </div>

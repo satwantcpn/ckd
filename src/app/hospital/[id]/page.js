@@ -1,7 +1,7 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
 
-export default function SingleVenture() {
+export default function SingleHospital() {
 
     const memberList = [
         {
@@ -47,12 +47,12 @@ export default function SingleVenture() {
     ]
     return (
         <>
-            <Header pageTitle={"Sri Guru Harkrishan Sr. Sec. Public School"} />
+            <Header pageTitle={"Chief Khalsa Diwan Charitable Hospital"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
                     <img src="/schoolBanner.jpg" />
                     <div className="ventureBannerContent">
-                        <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
+                        <h1>Chief Khalsa Diwan Charitable Hospital</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>
                     </div>
                 </div>

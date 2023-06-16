@@ -47,7 +47,7 @@ export default function SingleVenture() {
     ]
     return (
         <>
-            <Header pageTitle={"Sri Guru Harkrishan Sr. Sec. Public School"} />
+            <Header pageTitle={"Birdh Ghar"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
                     <img src="/schoolBanner.jpg" />

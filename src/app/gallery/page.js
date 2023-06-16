@@ -1,5 +1,6 @@
 import VentureCardComponent from "../components/VentureCardComponent";
 import GalleryListComponent from "../components/galleryList";
+import Header from "../components/header";
 
 export default function Gallery() {
     const galleries = [
@@ -35,19 +36,23 @@ export default function Gallery() {
         }
     ]
     return (
-        <section className="full_width_section">
-            <div className="container">
-                <div className="row">
-                    {
-                        galleries && galleries.map((item, index) => (
-                            <div className="col-md-3 mb-4" key={item.id}>
-                                <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} />
-                            </div>
-                        ))
-                    }
-                </div>
+        <>
+            <Header pageTitle={"Gallery"} />
+            <section className="full_width_section">
+                <div className="container">
+                    <div className="row">
+                        {
+                            galleries && galleries.map((item, index) => (
+                                <div className="col-md-3 mb-4" key={item.id}>
+                                    <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} />
+                                </div>
+                            ))
+                        }
+                    </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </>
+
     )
 }

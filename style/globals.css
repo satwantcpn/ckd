@@ -182,7 +182,7 @@ header.InnerPage {
 
 .logoBox img {
   width: 100%;
-  max-width: 330px;
+  max-width: 410px;
   height: auto;
 }
 
@@ -641,7 +641,8 @@ p.ftrHeading span {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #122259
+  color: #122259;
+  text-transform: capitalize;
 }
 
 .memberItem h3 {
@@ -1194,7 +1195,8 @@ p.ftrHeading span {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background: linear-gradient(95.72deg, rgba(120, 55, 0, 0.8) 23.32%, rgba(95, 47, 7, 0.8) 68.15%);
+  background: #FF9933;
+  opacity: 0.7;
 }
 
 .ventureBannerContent {
@@ -1458,4 +1460,35 @@ p.ftrHeading span {
   .sliderThumbs img {
     max-width: 180px;
   }
+}
+
+.ventureImgBox {
+  display: block;
+  clear: both;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ventureImgBox a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.ventureImgBox img {
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+}
+
+.ventureImgBox:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }

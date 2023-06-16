@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-export default function Header() {
+export default function Header({ pageTitle }) {
     const currentPath = usePathname()
     const headerClass = currentPath === '/' ? 'homePage' : 'InnerPage'
 
@@ -29,7 +29,7 @@ export default function Header() {
                 <div className='container-fluid'>
                     <div className='row alignCenter'>
                         <div className='logoBox col-md-3'>
-                            <Link href="/"><Image src="/logoNew.png" alt="My Image" width={360} height={80} /></Link>
+                            <Link href="/"><Image src="/logoUpdatedNew.png" alt="My Image" width={360} height={80} /></Link>
                         </div>
                         <div className='navBar col-md-9'>
                             <div className='navContactBar'>
@@ -60,7 +60,7 @@ export default function Header() {
                 (currentPath !== '/' && currentPath !== '/schools/1') ? (<div className='headerBanner'>
                     <div className='headingBar'>
                         <p className='subSmallHeading'>Chief Khalsa Diwan</p>
-                        <h2>Schools</h2>
+                        <h2>{pageTitle}</h2>
                         <svg width="496" height="51" viewBox="0 0 496 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L39.6369 50L92.0726 1L144.508 50L188.665 1L238.341 50L293.536 1L340.453 50L390.128 1L450.844 50L495 1" stroke="white" /></svg>
                     </div>
                 </div>) : ''

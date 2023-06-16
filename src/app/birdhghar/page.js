@@ -43,7 +43,7 @@ export default function SchoolsList() {
     ]
     return (
         <>
-            <Header pageTitle={"Schools"} />
+            <Header pageTitle={"Birdh Ghar"} />
             <section className="full_width_section">
                 <div className="container">
                     <div className="row">
