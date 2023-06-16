@@ -50,7 +50,7 @@ export default function SingleVenture() {
             <Header pageTitle={"Birdh Ghar"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.jpg" />
                     <div className="ventureBannerContent">
                         <h1>Birdh Ghar</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>

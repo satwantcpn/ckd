@@ -50,7 +50,7 @@ export default function SinglePV() {
             <Header pageTitle={"Khalsa Parcharak Vidyala"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>Khalsa Parcharak Vidyala</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>

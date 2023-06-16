@@ -409,7 +409,7 @@ section.aboutSection {
 }
 
 .aboutUs {
-  padding: 15px;
+  padding: 15px 15px 40px;
   border-radius: 60px;
 }
 
@@ -432,7 +432,7 @@ section.aboutSection {
 .aboutUsTextImg img {
   display: inline-block;
   width: 100%;
-  max-width: 130px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -595,7 +595,7 @@ section.aboutSection {
 /*--- Footer ----*/
 
 .footer {
-  background: #13063C;
+  background: rgb(43 13 135 / 92%);
   background-image: url(/footerbg.png);
   padding: 70px 0px;
   margin-top: 70px;
@@ -699,6 +699,7 @@ p.ftrHeading span {
   overflow: hidden;
   height: 100%;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+  background: #fff;
 }
 
 
@@ -1017,7 +1018,7 @@ p.ftrHeading span {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgb(29 3 104 / 50%);
+  background: rgb(29 3 104 / 30%);
   transition: all .2s linear;
   -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear;
@@ -1063,7 +1064,7 @@ p.ftrHeading span {
   display: block;
   clear: both;
   width: 100%;
-  color: #ff9933;
+  color: #fff;
   font-weight: 600;
   font-family: 'Poppins', sans-serif !important;
   font-size: 30px;
@@ -1084,6 +1085,7 @@ p.ftrHeading span {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  background: #fff;
 }
 
 .ventureCardInner {
@@ -1662,4 +1664,36 @@ p.ftrHeading span {
   width: 100%;
   max-width: 45px;
   cursor: pointer;
+}
+
+.aboutUsOtrBox .headingBar {
+  margin: 45px 0px 10px;
+}
+
+.lineBg {
+  position: relative;
+}
+
+.lineBg::after {
+  content: '';
+  background: url('/founder_bg_image.png') repeat;
+  background-size: contain;
+  background-position: top left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.lineSep {
+  display: block;
+  clear: both;
+  width: 100%;
+  max-width: 150px;
+  height: 3px;
+  background: #fff;
+  margin: 15px auto 0px;
 }

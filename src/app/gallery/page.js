@@ -38,7 +38,7 @@ export default function Gallery() {
     return (
         <>
             <Header pageTitle={"Gallery"} />
-            <section className="full_width_section">
+            <section className="full_width_section mt-4 pt-4 lineBg">
                 <div className="container">
                     <div className="row">
                         {

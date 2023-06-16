@@ -4,19 +4,19 @@ import { useState } from "react"
 
 export default function HomeSliderPunjabi({ slides }) {
     const [activeSlideImg, setActiveSlideImg] = useState('/slide1.png')
-    const [activeSlideText, setActiveSlideText] = useState('ਗੁਰੂ ਖਾਲਸਾ ਪੰਥ ਦੇ ਦਿੱਗਜ ਸਿੰਘਾਂ ਨੇ ਆਪਣੀ ਦੂਰਅੰਦੇਸ਼ੀ ਦੇ ')
+    const [activeSlideText, setActiveSlideText] = useState('ਗੁਰੂ ਖਾਲਸਾ ਪੰਥ ਦੇ ਦਿੱਗਜ ਸਿੰਘਾਂ ਨੇ ਆਪਣੀ ਦੂਰਅੰਦੇਸ਼ੀ ਨਾਲ ')
     const [activeSlideText1, setActiveSlideText1] = useState('"ਚੀਫ਼ ਖ਼ਾਲਸਾ ਦੀਵਾਨ"')
-    const [activeSlideText2, setActiveSlideText2] = useState('ਨਾਲ ਦੇ ਉਦਘਾਟਨੀ ਸੈਸ਼ਨ ਦਾ ਆਯੋਜਨ ਕੀਤਾ।')
+    const [activeSlideText2, setActiveSlideText2] = useState('ਦੇ ਉਦਘਾਟਨੀ ਸੈਸ਼ਨ ਦਾ ਆਯੋਜਨ ਕੀਤਾ।')
     const [activeSlideText3, setActiveSlideText3] = useState('ਆਓ ਦੇਖੀਏ ਕਿ ਇਹ ਅੱਜ ਕਿੱਥੇ ਹੈ....')
     const [activeSlideHeading, setActiveSlideHeading] = useState('30 ਅਕਤੂਬਰ 1902 ਮਲਵਈ ਬੁੰਗਾ ਸ੍ਰੀ ਦਰਬਾਰ ਸਾਹਿਬ')
     const [activeslogan, setActiveSlogan] = useState(slides[0].slogan)
 
-    const homeSliderHandler = (slideImg, slideHeading, slideText, slideText1, slideText2) => {
+    const homeSliderHandler = (slideImg, slideHeading, slideText, slideText2) => {
         setActiveSlideImg(slideImg)
         setActiveSlideHeading(slideHeading)
-        setActiveSlideText('')
+        slideText ? setActiveSlideText(slideText) : setActiveSlideText('')
         setActiveSlideText1('')
-        setActiveSlideText2('')
+        slideText2 ? setActiveSlideText2(slideText2) : setActiveSlideText2('')
         setActiveSlideText3('')
     }
 

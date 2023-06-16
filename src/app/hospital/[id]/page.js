@@ -50,7 +50,7 @@ export default function SingleHospital() {
             <Header pageTitle={"Chief Khalsa Diwan Charitable Hospital"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>Chief Khalsa Diwan Charitable Hospital</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>

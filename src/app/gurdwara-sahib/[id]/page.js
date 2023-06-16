@@ -50,7 +50,7 @@ export default function SingleGurdwaraSahib() {
             <Header pageTitle={"Gurudwara Chief Khalsa Diwan"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>

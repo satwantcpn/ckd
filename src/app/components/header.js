@@ -85,7 +85,7 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                     <div className='headingBar'>
                         <p className='subSmallHeading'>Chief Khalsa Diwan</p>
                         <h2>{pageTitle}</h2>
-                        <svg width="496" height="51" viewBox="0 0 496 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L39.6369 50L92.0726 1L144.508 50L188.665 1L238.341 50L293.536 1L340.453 50L390.128 1L450.844 50L495 1" stroke="white" /></svg>
+                        <span className="lineSep"></span>
                     </div>
                 </div>) : ''
             }

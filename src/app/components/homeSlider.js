@@ -11,12 +11,12 @@ export default function HomeSlider({ slides }) {
     const [activeSlideHeading, setActiveSlideHeading] = useState('30th Oct 1902 Malwai Bunga Sri Darbar Sahib')
     const [activeslogan, setActiveSlogan] = useState(slides[0].slogan)
 
-    const homeSliderHandler = (slideImg, slideHeading, slideText, slideText1, slideText2) => {
+    const homeSliderHandler = (slideImg, slideHeading, slideText, slideText2) => {
         setActiveSlideImg(slideImg)
         setActiveSlideHeading(slideHeading)
-        setActiveSlideText('')
+        slideText ? setActiveSlideText(slideText) : setActiveSlideText('')
         setActiveSlideText1('')
-        setActiveSlideText2('')
+        slideText2 ? setActiveSlideText2(slideText2) : setActiveSlideText2('')
         setActiveSlideText3('')
     }
 

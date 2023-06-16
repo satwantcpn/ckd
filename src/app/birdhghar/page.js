@@ -44,7 +44,7 @@ export default function SchoolsList() {
     return (
         <>
             <Header pageTitle={"Birdh Ghar"} />
-            <section className="full_width_section">
+            <section className="full_width_section mt-4 pt-4 lineBg">
                 <div className="container">
                     <div className="row">
                         {

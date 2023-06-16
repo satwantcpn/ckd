@@ -4,7 +4,7 @@ export default function SingleGallery() {
     return (
         <>
             <Header pageTitle={"Gallery"} />
-            <section className="full_width_section">
+            <section className="full_width_section mt-4 pt-4 lineBg">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 mb-3">

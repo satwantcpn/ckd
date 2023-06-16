@@ -13,7 +13,7 @@ export default function EducationCommittee() {
     return (
         <>
             <Header pageTitle="Education Committee" />
-            <main>
+            <main className="mt-4 pt-4 lineBg">
                 <div className="container pt-4">
                     <div className="row">
                         <div className="col-md-4  mb-3">

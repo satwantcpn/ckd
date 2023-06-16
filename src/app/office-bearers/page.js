@@ -19,11 +19,11 @@ export default function OfficeBearers() {
                     <div className="ventureBannerContent ob_heading">
                         <h1>Chief Khalsa Diwan</h1>
                         <h2>Office Bearers</h2>
-                        <svg width="496" height="51" viewBox="0 0 496 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L39.6369 50L92.0726 1L144.508 50L188.665 1L238.341 50L293.536 1L340.453 50L390.128 1L450.844 50L495 1" stroke="white"></path></svg>
+                        <span className="lineSep"></span>
                     </div>
                 </div>
             </section>
-            <main className="mt-4 pt-4">
+            <main className="mt-4 pt-4 lineBg">
                 <div className="container pt-4 mt-4">
                     <div className="row">
                         <div className="col-md-4 mb-3">

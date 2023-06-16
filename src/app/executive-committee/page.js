@@ -13,7 +13,7 @@ export default function ExecutiveCommittee() {
     return (
         <>
             <Header pageTitle="Executive Committee" />
-            <main>
+            <main className="mt-4 pt-4 lineBg">
                 <div className="container pt-4">
                     <div className="row">
                         <div className="col-md-4  mb-3">

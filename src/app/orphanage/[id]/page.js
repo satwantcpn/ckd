@@ -50,7 +50,7 @@ export default function SingleOrphanage() {
             <Header pageTitle={"Central Khalsa Orphanage"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.png" />
                     <div className="ventureBannerContent">
                         <h1>Central Khalsa Orphanage</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>

@@ -29,11 +29,11 @@ export default function Home() {
       url: '/slide1.png',
       thumbHeading: 'Biradh Ghar(s)',
       thumbUrl: '/biradhghar.png',
-      heading: 'Biradh Ghar(s)',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      heading: 'Chief Khalsa Diwan Biradh Ghar(s)',
+      description: 'Extending a helping hand to our seniors when needed the most...',
+      descriptionLine1: '',
+      descriptionLine2: '',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
@@ -41,54 +41,54 @@ export default function Home() {
       thumbHeading: 'Gurdwara Sahib',
       thumbUrl: '/gurudwarasahib.png',
       heading: 'Gurdwara Sahib',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      description: 'At Head Office Chief Khalsa Diwan',
+      descriptionLine1: '',
+      descriptionLine2: '',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide1.png',
+      url: '/collegeBanner.png',
       thumbUrl: '/college.png',
       thumbHeading: 'Colleges',
-      heading: 'Colleges',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      heading: 'Chief Khalsa Diwan Colleges',
+      description: 'Excels in professionalism and takes pride in Mentoring its students to',
+      descriptionLine1: '',
+      descriptionLine2: 'Achieve the dreams in the endeavors they choose to follow in their life ahead of them',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
-      url: '/slide2.jpg',
+      url: '/schoolBanner.png',
       thumbUrl: '/school.png',
       thumbHeading: 'Schools',
-      heading: 'Schools',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      heading: 'Chief Khalsa Diwan Schools',
+      description: 'Providing positive learning environment',
+      descriptionLine1: '',
+      descriptionLine2: 'Where every child is Loved and Respected',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide1.png',
       thumbUrl: '/hospital.png',
       thumbHeading: 'Hospitals',
-      heading: 'Hospitals',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      heading: 'Chief Khalsa Diwan Hospitals',
+      description: 'Run charitable hospitals for those in need',
+      descriptionLine1: '',
+      descriptionLine2: '',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     },
     {
       url: '/slide2.jpg',
       thumbUrl: '/orphange.png',
       thumbHeading: 'Orphanage',
-      heading: 'Orphanage',
-      description: 'Stalwarts of Guru Khalsa Panth held opening session of',
-      descriptionLine1: '"CHIEF KHALSA DIWAN"',
-      descriptionLine2: 'With their vision a commitment was made.',
-      descriptionLine3: 'LET SEE WHERE IT IS TODAY....',
+      heading: 'Chief Khalsa Diwan Orphanage',
+      description: 'Providing homes for homeless where they are loved',
+      descriptionLine1: '',
+      descriptionLine2: 'Setting an example of Humanity.',
+      descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
     }
   ]
@@ -112,7 +112,7 @@ export default function Home() {
                   </div>
                   <div className='col-md-5'>
                     <div className='aboutUsTextImg'>
-                      <Image src="/logoIcon.png" alt="My Image" width={255} height={280} />
+                      <Image src="/logoImage.png" alt="My Image" width={255} height={280} />
                     </div>
                   </div>
                 </div>

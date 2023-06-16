@@ -50,7 +50,7 @@ export default function SingleCollege() {
             <Header pageTitle={"C.K.D. Institute Of Management & Technology"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/schoolBanner.jpg" />
+                    <img src="/ventureBannerImage.jpg" />
                     <div className="ventureBannerContent">
                         <h1>C.K.D. Institute Of Management & Technology</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>
