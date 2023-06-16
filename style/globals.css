@@ -685,10 +685,11 @@ p.ftrHeading span {
   border: 1px solid #D1D1D1;
   border-radius: 10px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 40px;
   padding-top: 10px;
   overflow: hidden;
+  height: 100%;
 }
 
 .memberItem::after {
@@ -736,7 +737,7 @@ p.ftrHeading span {
   clear: both;
   width: 100%;
   margin: 0px 0px 10px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #181818;
@@ -994,6 +995,20 @@ p.ftrHeading span {
   -webkit-transition: all .2s linear;
 }
 
+.sliderThumbs .sliderThumbOutr span {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  top: 0px;
+  left: 0px;
+  letter-spacing: 0.5px;
+}
+
 .sliderThumbs .sliderThumbOutr::before {
   content: '';
   position: absolute;
@@ -1001,7 +1016,7 @@ p.ftrHeading span {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgb(29 3 104 / 30%);
+  background: rgb(29 3 104 / 50%);
   transition: all .2s linear;
   -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear;
@@ -1519,7 +1534,7 @@ p.ftrHeading span {
   font-size: 40px;
   color: #fff;
   line-height: 42px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1532,6 +1547,11 @@ p.ftrHeading span {
   line-height: 32px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.kesriColor {
+  color: #ff9933;
+  font-weight: 600;
 }
 
 .aboutUsOtrBox .headingBar h1 {

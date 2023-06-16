@@ -29,7 +29,7 @@ export default function Header({ pageTitle }) {
                 <div className='container-fluid'>
                     <div className='row alignCenter'>
                         <div className='logoBox col-md-3'>
-                            <Link href="/"><Image src="/logoUpdatedNew.png" alt="My Image" width={360} height={80} /></Link>
+                            <Link href="/"><Image src="/logoUpdatedNew.png" alt="My Image" width={450} height={75} /></Link>
                         </div>
                         <div className='navBar col-md-9'>
                             <div className='navContactBar'>

@@ -16,40 +16,40 @@ export default function EducationCommittee() {
             <main>
                 <div className="container pt-4">
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4  mb-3">
                             <MemberCard title="Dr. SARBJIT SINGH CHHINA" designation="HONY. SECY. EDUCATION COMMITTEE" email="sarbjitchhina@yahoo.co.in" city="AMRITSAR" memberImage="/sbc.jpg" setMemberPopup={setMemberPopup} />
                         </div>
                     </div>

@@ -1,7 +1,12 @@
+import Header from "./components/header";
+
 export default function NotFound() {
     return (
         <>
-            Page not Found
+            <Header />
+            <div className="container">
+                Comming Soon...
+            </div>
         </>
     )
 }
