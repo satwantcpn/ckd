@@ -101,7 +101,7 @@ export default function Home() {
         <section className='aboutSection'>
           <div className='container'>
             <div className='aboutUsOtrBox'>
-              <HeadingC lrgHeading={"Cheif Khalsa Diwan"} heading={"Charitable Society"} />
+              <HeadingC lrgHeading={"Chief Khalsa Diwan"} heading={"Charitable Society"} />
               <div className='aboutUs'>
                 <div className='row'>
                   <div className='col-md-7'>
