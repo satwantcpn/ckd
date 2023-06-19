@@ -180,7 +180,7 @@ export default function Home() {
             <div className='PresidentMessageOtrBox'>
               <div className='row'>
                 <div className='col-md-7'>
-                  <HeadingL subSmallHeading={""} heading={"Cheif Khalsa Diwan Charitable Society"} />
+                  <HeadingL subSmallHeading={""} heading={"Chief Khalsa Diwan Charitable Society"} />
                   <HeadingDescription HeadingDescription={'The motto for my service to Chief Khalsa Diwan Charitable Society for the years to come shall be to promote "Sikhi-te-Sikhya" (Spread of Sikhism and Education).I feel that the educational system in the country has been facing hardships from the past several years due to lack of better facilities and opportunities for the youth to excel in their fields of interests. As a matter of fact, overall economic growth has remained disconnected from employment generation noting that young people continue to suffer from persistent unemployment and lack of quality job opportunities even after attaining best education. It is my personal belief that it is high time that such established organizations like Chief Khalsa Diwan Charitable Society must invest heavily into skill-oriented education that help achieve the goals of utmost employment in the country.lack of quality job opportunities even after attaining best education. It is my personal belief that it is high time that such established organizations like Chief Khalsa Diwan Charitable Society'} />
                   <GlobalButton buttonValue="View More >>" color={blue} />
                 </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 </div>
                 <div className='col-md-6'>
                   <div className='counterInrTextBox'>
-                    <HeadingL subSmallHeading={""} heading={"Cheif Khalsa Diwan Charitable Society"} />
+                    <HeadingL subSmallHeading={""} heading={"Chief Khalsa Diwan Charitable Society"} />
                     <HeadingDescription HeadingDescription={'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".'} />
                     <HeadingDescription HeadingDescription={'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".'} />
                     <HeadingDescription HeadingDescription={'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".'} />
