@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    basePath: '/ckd',
+}
 
 module.exports = nextConfig
-            
