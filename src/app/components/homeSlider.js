@@ -29,10 +29,12 @@ export default function HomeSlider({ slides }) {
                 <div className="sliderContentInner">
                     <div className="row align-items-end">
                         <div className="col-md-7">
-                            <span className="slidrHeading">{activeSlideHeading}</span>
-                            {activeSlideText && <span className="slidrText">{activeSlideText} <span className="kesriColor">{activeSlideText1}</span></span>}
-                            {activeSlideText2 && <span className="slidrText">{activeSlideText2} <span className="kesriColor">{activeSlideText3}</span></span>}
-                            <span className="slogan">{activeslogan}</span>
+                            <div className="sliderContentWrap">
+                                <span className="slidrHeading">{activeSlideHeading}</span>
+                                {activeSlideText && <span className="slidrText">{activeSlideText} <span className="kesriColor">{activeSlideText1}</span></span>}
+                                {activeSlideText2 && <span className="slidrText">{activeSlideText2} <span className="kesriColor">{activeSlideText3}</span></span>}
+                                <span className="slogan">{activeslogan}</span>
+                            </div>
                         </div>
                         <div className="col-md-5">
                             <div className="sliderThumbs">
