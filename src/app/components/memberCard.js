@@ -9,7 +9,7 @@ export default function MemberCard({ title, designation, email, city, memberImag
 
     return (
         <div className='memberItem'>
-            <span class="cusDes">Chief Khalsa Diwan</span>
+            <span className="cusDes">Chief Khalsa Diwan</span>
             <span className='memberPopupTrigger' onClick={memberPopHandler}><LuView /></span>
             <div className='row'>
                 <div className='col-md-8 memberItemLeft'>

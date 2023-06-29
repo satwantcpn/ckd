@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-export default function Header({ pageTitle, hideHeaderBanner }) {
+export default function Header({ pageTitle, hideHeaderBanner, pageSubTitle = 'Chief Khalsa Diwan' }) {
     const currentPath = usePathname()
     const headerClass = currentPath === '/' ? 'homePage' : 'InnerPage'
 
@@ -38,7 +38,11 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                                     <li> <a href="tel:6283282077"> <FontAwesomeIcon icon={faMobileScreen} width={12} /> +91-6283282077 <span> (Director Office) </span> </a></li>
                                     <li> <a href="#"> <FontAwesomeIcon icon={faMobileScreen} width={12} /> +91-183-2228771 </a></li>
                                     <li> <a href="mailto:info@cheikhalsadiwan.com"> <FontAwesomeIcon icon={faEnvelope} width={15} /> info@cheikhalsadiwan.com </a></li>
-                                    <li className='langIcon'><Link href="/home-punjabi"><img src='/languageNew.png' alt="Language Icon" /></Link></li>
+                                    <li className='langIcon'>
+                                        <Link href="/home-punjabi">
+                                            <Image src='/languageNew.png' alt="Language Icon" width={45} height={24} />
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className='navLinkBar'>
@@ -54,7 +58,7 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
                                             <li><Link href="/executive-committee"><span>Executive Committee</span></Link></li>
                                             <li><Link href="/finance-committee"><span>Finance Committee</span></Link></li>
                                             <li><Link href="/education-committee"><span>Education Committee</span></Link></li>
-                                            <li><Link href="/"><span>Members</span></Link></li>
+                                            <li><Link href="/members"><span>Members</span></Link></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -83,7 +87,7 @@ export default function Header({ pageTitle, hideHeaderBanner }) {
             {
                 (currentPath !== '/' && currentPath !== '/schools/1' && !hideHeaderBanner) ? (<div className='headerBanner'>
                     <div className='headingBar'>
-                        <p className='subSmallHeading'>Chief Khalsa Diwan</p>
+                        <p className='subSmallHeading'>{pageSubTitle}</p>
                         <h2>{pageTitle}</h2>
                         <span className="lineSep"></span>
                     </div>

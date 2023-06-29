@@ -1,5 +1,6 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
+import Image from "next/image";
 
 export default function SingleOrphanage() {
 
@@ -50,7 +51,7 @@ export default function SingleOrphanage() {
             <Header pageTitle={"Central Khalsa Orphanage"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.png" />
+                    <Image src="/ventureBannerImage.png" alt="Banner" width={1905} height={595} />
                     <div className="ventureBannerContent">
                         <h1>Central Khalsa Orphanage</h1>
                         <span className="ventureLocation">(Shaheed Udham Singh Chowk (Putlighar), G.T. Road, Amritsar - 143001)</span>
@@ -59,25 +60,25 @@ export default function SingleOrphanage() {
                 <div className="ventureBannerStip">
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/location.png" alt="icons" />
+                            <Image src="/location.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>Shaheed Udham Singh Chowk, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/telephone.png" alt="icons" />
+                            <Image src="/telephone.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>0183-2562531</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/email_icon.png" alt="icons" />
+                            <Image src="/email_icon.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>orphanage@chiefkhalsadiwan.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/Internet.png" alt="icons" />
+                            <Image src="/Internet.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>www.centralkhalsaorphanage.org</span>
                     </div>

@@ -1,3 +1,4 @@
+'use client'
 import styles from '../../style/page.module.css'
 import HeadingC from './components/headingC'
 import HeadingL from './components/headingL'
@@ -7,10 +8,10 @@ import ServiceCard from './components/serviceCard'
 import CounterNumberBox from './components/CounterNumberBox'
 import HeadingDescription from './components/HeadingDescription'
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import HomeSlider from './components/homeSlider'
 import Header from './components/header'
+import GalleryListComponent from './components/galleryList'
+import { useEffect } from 'react'
 
 export default function Home() {
 
@@ -90,6 +91,33 @@ export default function Home() {
       descriptionLine2: 'Setting an example of Humanity.',
       descriptionLine3: '',
       slogan: "SIKHI - SIKHYA - MANUKHATA"
+    }
+  ]
+
+  const posts = [
+    {
+      id: 1,
+      galleryImage: '/gallery3.jpg',
+      galleryTitle: 'Post title will goes here',
+      galleryLink: '/blog/1',
+    },
+    {
+      id: 2,
+      galleryImage: '/gallery2.jpg',
+      galleryTitle: 'Post title will goes here',
+      galleryLink: '/blog/1',
+    },
+    {
+      id: 3,
+      galleryImage: '/gallery1.jpg',
+      galleryTitle: 'Post title will goes here',
+      galleryLink: '/blog/1',
+    },
+    {
+      id: 4,
+      galleryImage: '/gallery1.jpg',
+      galleryTitle: 'Post title will goes here',
+      galleryLink: '/blog/1',
     }
   ]
 
@@ -186,8 +214,7 @@ export default function Home() {
                 </div>
                 <div className='col-md-5'>
                   <div className='PresidentMessageImgBox'>
-                    <img src='/president_image.png' alt="president_image" />
-
+                    <Image src='/president_image.png' alt="president_image" width={469} height={498} />
                     <div className='PrcdntMsagTextBox'>
                       <p className='presidentName'> DR. INDERBIR SINGH NIJJAR </p>
                       <p className='presidentDesignation'> President </p>
@@ -226,6 +253,20 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className='postModule'>
+          <div className='container'>
+            <HeadingC subSmallHeading={"Chief Khalsa Diwan's"} heading={"Latest Posts"} />
+            <div className="row">
+              {
+                posts && posts.map((item, index) => (
+                  <div className="col-md-3 mb-4" key={item.id}>
+                    <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} galleryLink={item.galleryLink} />
+                  </div>
+                ))
+              }
             </div>
           </div>
         </section>

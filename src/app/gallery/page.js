@@ -8,31 +8,37 @@ export default function Gallery() {
             id: 1,
             galleryImage: '/gallery3.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         },
         {
             id: 2,
             galleryImage: '/gallery2.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         },
         {
             id: 3,
             galleryImage: '/gallery1.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         },
         {
             id: 4,
             galleryImage: '/gallery1.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         },
         {
             id: 5,
             galleryImage: '/gallery1.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         },
         {
             id: 6,
             galleryImage: '/gallery1.jpg',
             galleryTitle: 'Foundation stone of New CKD School in Batala',
+            galleryLink: '/gallery/1',
         }
     ]
     return (
@@ -44,7 +50,7 @@ export default function Gallery() {
                         {
                             galleries && galleries.map((item, index) => (
                                 <div className="col-md-3 mb-4" key={item.id}>
-                                    <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} />
+                                    <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} galleryLink={item.galleryLink} />
                                 </div>
                             ))
                         }

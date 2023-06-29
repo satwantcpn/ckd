@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import { useState } from "react"
 
 export default function HomeSlider({ slides }) {
@@ -23,7 +23,7 @@ export default function HomeSlider({ slides }) {
     return (
         <section className="homeSlider">
             <div className="hmSliderImg">
-                <img src={activeSlideImg} />
+                <Image src={activeSlideImg} alt="Home Banner" width={1920} height={745} />
             </div>
             <div className="sliderContent">
                 <div className="sliderContentInner">
@@ -42,7 +42,7 @@ export default function HomeSlider({ slides }) {
                                     slides && slides.map((item, index) => (
                                         <div className="sliderThumbOutr" key={index}>
                                             {item.thumbHeading && <span>{item.thumbHeading}</span>}
-                                            <img src={item.thumbUrl} onClick={() => homeSliderHandler(item.url, item.heading, item.description, item.descriptionLine2)} />
+                                            <Image src={item.thumbUrl} onClick={() => homeSliderHandler(item.url, item.heading, item.description, item.descriptionLine2)} alt="Home Slide Thumbnails" width={244} height={182} />
                                         </div>
                                     ))
                                 }

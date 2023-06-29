@@ -1,10 +1,11 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import MemberCard from "../components/memberCard";
 import Image from 'next/image';
 import Header from "../components/header";
+import CkdGlobalButton from "../components/GlobalButton";
 
-export default function EducationCommittee() {
+export default function AllMembers() {
     const [memberPopup, setMemberPopup] = useState(false)
     const memberPopClose = () => {
         setMemberPopup(false)
@@ -25,7 +26,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'Mohali'
         },
         {
             id: 3,
@@ -33,7 +34,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'Chandigarh'
         },
         {
             id: 4,
@@ -41,7 +42,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 5,
@@ -57,7 +58,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 7,
@@ -65,7 +66,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 8,
@@ -73,7 +74,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 9,
@@ -81,7 +82,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'chandigarh'
         },
         {
             id: 10,
@@ -89,7 +90,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'tarn taran'
         },
         {
             id: 11,
@@ -97,7 +98,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'tarn taran'
         },
         {
             id: 12,
@@ -113,7 +114,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 14,
@@ -121,7 +122,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'mohali'
         },
         {
             id: 15,
@@ -129,7 +130,7 @@ export default function EducationCommittee() {
             designation: 'HONY. SECY. EDUCATION COMMITTEE',
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
-            city: 'Amritsar'
+            city: 'chandigarh'
         },
         {
             id: 16,
@@ -146,12 +147,54 @@ export default function EducationCommittee() {
             email: 'sarbjitchhina@yahoo.co.in',
             memberImage: '/sbc.jpg',
             city: 'Amritsar'
+        },
+        {
+            id: 18,
+            title: 'Balwinder singh',
+            designation: 'HONY. SECY. EDUCATION COMMITTEE',
+            email: 'sarbjitchhina@yahoo.co.in',
+            memberImage: '/sbc.jpg',
+            city: 'Amritsar'
+        },
+        {
+            id: 19,
+            title: 'Ajaib Singh',
+            designation: 'HONY. SECY. EDUCATION COMMITTEE',
+            email: 'sarbjitchhina@yahoo.co.in',
+            memberImage: '/sbc.jpg',
+            city: 'Amritsar'
         }
     ]
 
+    const [memberData, setMemberData] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
+    const [searchVal, setSearchVal] = useState('')
+    const [selectedCity, setSelectedCity] = useState();
+
+    useEffect(() => {
+        setMemberData(eduMembers)
+    }, [])
+
+    function getFilteredList() {
+        if (selectedCity && searchVal) {
+            return memberData.filter((item) => item.city.toLowerCase() === selectedCity.toLowerCase() && item.title.toLowerCase().includes(searchVal.toLowerCase()))
+        }
+        else if (selectedCity) {
+            return memberData.filter((item) => item.city.toLowerCase() === selectedCity.toLowerCase())
+        }
+        else if (searchVal) {
+            return memberData.filter((item) => item.title.toLowerCase().includes(searchVal.toLowerCase()))
+        }
+        else {
+            return memberData;
+        }
+    }
+
+    let filteredMemberList = useMemo(getFilteredList, [selectedCity, memberData, searchVal]);
+
     const itemsPerPage = 12;
-    const totalPages = Math.ceil(eduMembers.length / itemsPerPage);
+    filteredMemberList.sort((a, b) => a.title.localeCompare(b.title))
+    const totalPages = Math.ceil(filteredMemberList.length / itemsPerPage);
 
     const handleClick = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -160,14 +203,15 @@ export default function EducationCommittee() {
     const renderItems = () => {
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
-        const currentItems = eduMembers.slice(startIndex, endIndex);
+        const currentItems = filteredMemberList.slice(startIndex, endIndex)
 
-        return currentItems.map((item, index) => (
+        return currentItems.map((item) => (
             <div className="col-md-4  mb-4" key={item.id}>
                 <MemberCard title={item.title} designation={item.designation} email={item.email} city={item.city} memberImage={item.memberImage} setMemberPopup={setMemberPopup} />
             </div>
         ));
     };
+
     const renderPagination = () => {
         const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
 
@@ -182,11 +226,41 @@ export default function EducationCommittee() {
         ));
     };
 
+    const cityDropdownFilter = (event) => {
+        setSelectedCity(event.target.value);
+    }
+    const resetFilter = (e) => {
+        e.preventDefault()
+        setSelectedCity('')
+        setSearchVal('')
+    }
     return (
         <>
-            <Header pageTitle="Education Committee" />
+            <Header pageTitle="Members" />
             <main className="mt-4 pt-4 lineBg">
                 <div className="container pt-4">
+                    <div className="row mb-4 pb-4 justify-content-center">
+                        <div className="col-md-7">
+                            <div className="careerFilter">
+                                <div className="pubSearch">
+                                    <input type="text" placeholder="Search..." value={searchVal} onChange={(e) => setSearchVal(e.target.value)} />
+                                    <Image src='/searchIcon.svg' alt="Search Icon" width={15} height={15} />
+                                </div>
+                                <div className="careerSelect">
+                                    <select onChange={cityDropdownFilter} value={selectedCity}>
+                                        <option value="">Filter By City</option>
+                                        <option value="amritsar">Amritsar</option>
+                                        <option value="tarn taran">Tarn Taran</option>
+                                        <option value="mohali">Mohali</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                    </select>
+                                </div>
+                                <div className="resetFilter">
+                                    <button className="resetBtn" onClick={resetFilter}>Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="row mb-4 pb-4">
                         {renderItems()}
                     </div>

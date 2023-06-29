@@ -1,5 +1,6 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
+import Image from "next/image";
 
 export default function SingleGurdwaraSahib() {
 
@@ -50,7 +51,7 @@ export default function SingleGurdwaraSahib() {
             <Header pageTitle={"Gurudwara Chief Khalsa Diwan"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.png" />
+                    <Image src="/ventureBannerImage.png" alt="Banner" width={1905} height={595} />
                     <div className="ventureBannerContent">
                         <h1>Gurudwara Chief Khalsa Diwan</h1>
                         <span className="ventureLocation">(C.K.D. Head Office, G.T. Road)</span>
@@ -59,25 +60,25 @@ export default function SingleGurdwaraSahib() {
                 <div className="ventureBannerStip">
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/location.png" alt="icons" />
+                            <Image src="/location.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>C.K.D. Head Office, G.T. Road, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/telephone.png" alt="icons" />
+                            <Image src="/telephone.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>0183-2228771</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/email_icon.png" alt="icons" />
+                            <Image src="/email_icon.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>info@chiefkhalsadiwan.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/Internet.png" alt="icons" />
+                            <Image src="/Internet.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>https://chiefkhalsadiwan.com</span>
                     </div>

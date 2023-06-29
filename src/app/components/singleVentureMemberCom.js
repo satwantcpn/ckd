@@ -1,10 +1,12 @@
+import Image from "next/image"
+
 export default function SingleVentureMemberComp({ memberImage, memberName, memberDesignation, ventureName, highlight }) {
     const highlightMbr = highlight ? 'highlightMbr' : ''
     return (
         <>
             <div className={`singleVMemberItem ${highlightMbr}`}>
                 <div className="sVMImg">
-                    <img src={memberImage} />
+                    <Image src={memberImage} alt="Member Image" width={240} height={204} />
                 </div>
                 <div className="sVMDetail">
                     <span className="sVMDesignation">{memberDesignation}</span>

@@ -441,7 +441,7 @@ section.aboutSection {
 .venturesSection {
   margin-top: 70px;
   background-color: #FFF5ED;
-  padding: 40px 0px;
+  padding: 50px 0px 40px;
 }
 
 .ventureCardsBox {
@@ -452,7 +452,16 @@ section.aboutSection {
 
 .ventureTitleBox {
   text-align: center;
-  padding: 20px 0px;
+  padding: 10px 0px 20px;
+}
+
+.ventureTitleBox span {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: #280b7d;
 }
 
 .venturesinrBx {
@@ -465,9 +474,6 @@ section.aboutSection {
   margin-bottom: 40px;
 }
 
-.ventureTitleBox p {
-  line-height: 0;
-}
 
 /*-- services --*/
 
@@ -560,7 +566,7 @@ section.aboutSection {
 
 .counterSection {
   margin-top: 35px;
-  padding: 35px 0px;
+  padding: 35px 0px 50px;
 }
 
 .counterMainBox {
@@ -614,6 +620,7 @@ section.aboutSection {
 
 .footerLogo span img {
   margin-bottom: 35px;
+  height: auto;
 }
 
 .FooterSocialLink {
@@ -996,6 +1003,7 @@ p.ftrHeading span {
   transition: all .2s linear;
   -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear;
+  height: auto;
 }
 
 .sliderThumbs .sliderThumbOutr {
@@ -1118,6 +1126,7 @@ p.ftrHeading span {
 .ventureImg img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .ventureDetail h2 {
@@ -1228,6 +1237,7 @@ p.ftrHeading span {
 
 .homeSlider .hmSliderImg img {
   min-height: 730px;
+  height: auto;
 }
 
 /*Gallery Component*/
@@ -1260,6 +1270,7 @@ p.ftrHeading span {
   display: block;
   width: 100%;
   border-radius: 10px;
+  height: auto;
 }
 
 .galleryDetail h2 {
@@ -1270,6 +1281,13 @@ p.ftrHeading span {
   text-align: center;
   margin: 0px;
   color: #381993;
+}
+
+.PresidentMessageImgBox>img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 90%;
 }
 
 .svgSep {
@@ -1289,6 +1307,7 @@ p.ftrHeading span {
 .singleGalleryImg img {
   display: inline-block;
   width: 100%;
+  height: auto;
 }
 
 .ventureBanner {
@@ -1301,6 +1320,7 @@ p.ftrHeading span {
 .ventureBanner img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .ventureBanner::before {
@@ -1428,6 +1448,7 @@ p.ftrHeading span {
 .stripIcon img {
   display: inline-block;
   width: 100%;
+  height: auto;
 }
 
 .ventureBannerStip .stripCol:not(:last-child)::after {
@@ -1490,6 +1511,7 @@ p.ftrHeading span {
 .sVMImg img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .sVMDetail,
@@ -1591,7 +1613,7 @@ p.ftrHeading span {
   display: block;
   clear: both;
   width: 100%;
-  font-size: 40px;
+  font-size: 38px;
   color: #fff;
   line-height: 42px;
   margin-bottom: 22px;
@@ -1651,6 +1673,13 @@ p.ftrHeading span {
   position: relative;
 }
 
+.ventureImgBox img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  min-width: 170px;
+}
+
 .ventureImgBox a {
   position: absolute;
   display: block;
@@ -1691,6 +1720,7 @@ p.ftrHeading span {
   width: 100%;
   max-width: 45px;
   cursor: pointer;
+  height: auto;
 }
 
 .aboutUsOtrBox .headingBar {
@@ -1762,6 +1792,7 @@ p.ftrHeading span {
 .founderCard .founderCardImg img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .founderCard .founderCardDetail {
@@ -2017,6 +2048,8 @@ p.ftrHeading span {
   overflow: hidden;
   position: relative;
   padding: 10px;
+  background: #fff;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 
 .publicationItemInner,
@@ -2056,7 +2089,7 @@ p.ftrHeading span {
   clear: both;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .pubCont h3 {
@@ -2081,17 +2114,20 @@ p.ftrHeading span {
 }
 
 .publicationFilter {
-  display: block;
+  display: flex;
   clear: both;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0px auto;
   background: #fff;
   border: 1px solid #D2D2D2;
-  padding: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 25px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .pubSearch {
@@ -2101,16 +2137,109 @@ p.ftrHeading span {
   position: relative;
 }
 
+.pubSearch img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
 .pubSearch input {
   display: block;
   clear: both;
   width: 100%;
-  padding: 7px 20px;
+  padding: 7px 20px 7px 40px;
   border-radius: 30px;
   background: #F4F4F4;
   border: none;
   outline: none;
 }
+
+.pubFilter {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.pubFilter ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  column-gap: 20px;
+}
+
+/*Custom Checkbox*/
+.customCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.customCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.customCheckbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.customCheckbox:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.customCheckbox input:checked~.checkmark {
+  background-color: #ff9933;
+}
+
+.customCheckbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox input:checked~.checkmark:after {
+  display: block;
+}
+
+.customCheckbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox .checkmark:after {
+  content: '';
+  left: 9px;
+  top: 3px;
+  width: 9px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Custom Checkbox*/
+
 
 .customPagination button {
   border-radius: 4px;
@@ -2129,4 +2258,518 @@ p.ftrHeading span {
   width: 100%;
   justify-content: center;
   column-gap: 15px;
+}
+
+.postModule {
+  display: block;
+  clear: both;
+  width: 100%;
+  background: #FFF5ED;
+  padding: 50px 0px;
+}
+
+.careerLogo {
+  display: flex;
+  clear: both;
+  background: #FABA82;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.careerLogo img {
+  height: auto;
+  width: 100%;
+  max-width: 60px;
+}
+
+.careerItem {
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  background: #FFFAF6;
+  border-radius: 10px;
+  position: relative;
+  padding: 50px 15px 15px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.contactPageBlocks .careerItem {
+  padding: 15px;
+}
+
+.careerItem .careerStrip {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  padding: 5px 20px;
+  background: #ff9933;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.carerrListCont {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.carerrListCont h2 {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px 0px 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #424242;
+}
+
+.fullWidth {
+  display: block;
+  clear: both;
+  width: 100%;
+  color: #1d0368;
+  font-weight: 500;
+}
+
+.carerrListCont .careerTags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 10px 0px;
+  padding: 0px;
+  column-gap: 10px;
+}
+
+.carerrListCont .careerTags li {
+  display: inline-block;
+}
+
+.carerrListCont .careerTags li span {
+  display: inline-block;
+  background: rgb(29 3 104 / 10%);
+  color: #1d0368;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 3px 13px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.carerrListCont .careerTags li span.lastDate {
+  background: #ff9933;
+  color: #fff;
+}
+
+.careerFilter {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.careerFilter select {
+  appearance: none;
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background: url('/downArrow.svg') no-repeat #F4F4F4;
+  background-size: 12px auto;
+  background-position: 95% center;
+  border: none;
+  outline: none;
+  max-width: 250px;
+  color: #424242;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.careerSort {
+  display: inline-block;
+}
+
+.careerSort span {
+  display: flex;
+  column-gap: 10px;
+  color: #F6781B;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.carerrListCont .jobDetailLink {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: right;
+}
+
+.carerrListCont .jobDetailLink a {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sjHeading {
+  color: #424242;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px 0px 30px;
+}
+
+.jobReq {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 15px;
+}
+
+.jobReqBlock {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(20% - 15px);
+  align-items: center;
+  column-gap: 10px;
+  border: 1px dashed #f93;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #fff8f1;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.jobReqBlock:last-child {
+  box-shadow: none;
+  background: none;
+}
+
+.jobReqBlock .jobReqIcon {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background: #FFE6D1;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobReqCont {
+  display: inline-block;
+}
+
+.jobReqCont h3 {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px 0px 5px;
+  color: #424242;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.jobReqCont span {
+  display: block;
+  clear: both;
+  width: 100%;
+  color: #858484;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.noBorder {
+  border: none;
+}
+
+.cuslobalBtn {
+  display: inline-block;
+}
+
+.cuslobalBtn a,
+.primaryBtn {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  border: none;
+}
+
+.cuslobalBtn a span,
+.primaryBtn span {
+  position: relative;
+  z-index: 100;
+}
+
+.cuslobalBtn a::before,
+.primaryBtn::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #381993;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+}
+
+.cuslobalBtn a::after,
+.primaryBtn::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0%;
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  background: #FF9933;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+}
+
+.cuslobalBtn a:hover::before,
+.primaryBtn:hover::before {
+  width: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cuslobalBtn a:hover::after,
+.primaryBtn:hover::after {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sectionSep {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.sectionSep::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  width: 100%;
+  height: 1px;
+  background: #d5d5d5;
+}
+
+.mBtm50 {
+  margin-bottom: 50px;
+}
+
+.sjContentDesc {
+  display: block;
+  clear: both;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+}
+
+.sjContentDesc h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.sjContentDesc p,
+.sjContentDesc ul {
+  font-size: 14px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.sjContentDesc ul {
+  margin-bottom: 40px;
+}
+
+.contactFormWrap {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: -3px -1px 22px 2px rgba(0, 0, 0, 0.07);
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.contactFormWrap h2,
+.contactPageBlocks .careerItem h2 {
+  color: #381993;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 180%;
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px;
+}
+
+.contactFormWrap p {
+  color: #8F8F8F;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  border-radius: 4px;
+  background: #F6F6F6;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  resize: none;
+  color: #424242
+}
+
+.contactPageBlocks .careerItem {
+  height: auto;
+  margin-bottom: 30px;
+  border: none;
+}
+
+body .contactPageBlocks .careerItem h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contactPageBlocks .careerItem .contactDetail {
+  display: block;
+  clear: both;
+  width: 100%;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contactPageBlocks .careerLogo {
+  margin-left: auto;
+}
+
+.contactSuggbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 15px;
+  background: #19105B;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  margin: 30px 0px;
+  align-items: center;
+  column-gap: 30px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.sugBoxImg {
+  display: inline-block;
+  width: 80px;
+  height: auto;
+  border-radius: 15px;
+  background: #FFEFE1;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sugBoxImg img {
+  width: 100%;
+  height: auto;
+}
+
+.contactSuggBocCont {
+  display: block;
+  width: calc(100% - 120px);
+}
+
+.contactSuggBocCont h3 {
+  clear: both;
+  display: block;
+  width: 100%;
+  color: #fff;
+  margin: 0px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contactSuggBocCont p {
+  margin: 0px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contactSuggBocCont p a {
+  color: #fff;
+}
+
+.resetBtn {
+  display: inline-block;
+  border: none;
+  background: #280b7d;
+  color: #fff;
+  padding: 0px 20px;
+  line-height: 38px;
+  border-radius: 20px;
+}
+
+.totalJobs {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contactPageBlocks:last-child .careerItem {
+  margin-bottom: 0px;
 }

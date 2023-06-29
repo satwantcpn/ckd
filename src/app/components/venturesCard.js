@@ -11,7 +11,7 @@ export default function VenturesCard({ ventureTitle, ventureImage, link }) {
                 <Image src={ventureImage} alt="My Image" width={231} height={174} />
             </div>
             <div className='ventureTitleBox'>
-                <p> {ventureTitle} </p>
+                <span> {ventureTitle} </span>
             </div>
         </div>
     )

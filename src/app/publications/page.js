@@ -1,8 +1,9 @@
 'use client'
+import Image from "next/image";
 import Header from "../components/header";
 import PublicationComponent from "../components/publicationComponent";
 
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function PublicationPage() {
     let pubArray = [
@@ -135,17 +136,46 @@ export default function PublicationPage() {
     ]
 
     const [currentPage, setCurrentPage] = useState(1);
+    const [pubData, setPubData] = useState([])
+    const [searchVal, setSearchVal] = useState('')
+    const [selectedCategory, setSelectedCategory] = useState('');
+
+    useEffect(() => {
+        setPubData(pubArray)
+    }, [])
+
+    function getFilteredList() {
+        if (selectedCategory && searchVal) {
+            return pubData.filter((item) => item.category.toLowerCase() === selectedCategory.toLowerCase() && item.title.toLowerCase().includes(searchVal.toLowerCase()))
+        }
+        else if (selectedCategory) {
+            return pubData.filter((item) => item.category.toLowerCase() === selectedCategory.toLowerCase())
+        }
+        else if (searchVal) {
+            return pubData.filter((item) => item.title.toLowerCase().includes(searchVal.toLowerCase()))
+        }
+        else {
+            return pubData;
+        }
+    }
+
+    let filteredPubList = useMemo(getFilteredList, [selectedCategory, pubData, searchVal]);
+
     const itemsPerPage = 9;
-    const totalPages = Math.ceil(pubArray.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredPubList.length / itemsPerPage);
 
     const handleClick = (pageNumber) => {
         setCurrentPage(pageNumber);
     };
+    const categoryFilter = (event) => {
+        setSelectedCategory(event.target.value);
+    }
+
 
     const renderItems = () => {
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
-        const currentItems = pubArray.slice(startIndex, endIndex);
+        const currentItems = filteredPubList.slice(startIndex, endIndex);
 
         return currentItems.map((item, index) => (
             <div className="col-md-4 mb-4" key={item.id}>
@@ -166,7 +196,11 @@ export default function PublicationPage() {
             </button>
         ));
     };
-
+    const resetFilter = (e) => {
+        e.preventDefault()
+        setSelectedCategory('')
+        setSearchVal('')
+    }
 
     return (
         <>
@@ -177,7 +211,27 @@ export default function PublicationPage() {
                         <div className="col-md-12">
                             <div className="publicationFilter">
                                 <div className="pubSearch">
-                                    <input type="text" placeholder="Search..." />
+                                    <input type="text" placeholder="Search..." value={searchVal} onChange={(e) => setSearchVal(e.target.value)} />
+                                    <Image src='/searchIcon.svg' alt="Search Icon" width={15} height={15} />
+                                </div>
+                                <div className="pubFilter">
+                                    <ul>
+                                        <li>
+                                            <label className="customCheckbox">Khalsa Advocate
+                                                <input type="radio" name="publication_category" value="khalsa advocate" onChange={categoryFilter} checked={selectedCategory === 'khalsa advocate'} />
+                                                <span className="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label className="customCheckbox">Nirguniara
+                                                <input type="radio" name="publication_category" value="nirguniara" onChange={categoryFilter} checked={selectedCategory === 'nirguniara'} />
+                                                <span className="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="resetFilter">
+                                    <button className="resetBtn" onClick={resetFilter}>Reset</button>
                                 </div>
                             </div>
                         </div>

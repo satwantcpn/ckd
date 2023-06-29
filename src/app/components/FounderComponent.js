@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { LuView } from 'react-icons/lu';
 export default function FounderListComp({ title, duration, image, setMemberPopup }) {
     const memberPopHandler = () => {
@@ -9,7 +10,7 @@ export default function FounderListComp({ title, duration, image, setMemberPopup
             <span className='founderCardLink' onClick={memberPopHandler} ><LuView /></span>
             <div className="founderCardInner">
                 <div className="founderCardImg">
-                    <img src={image} />
+                    <Image src={image} alt="Founder Image" width={350} height={550} />
                 </div>
                 <div className="founderCardDetail">
                     <h2>{title}</h2>

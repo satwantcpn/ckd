@@ -1,13 +1,15 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import { LuView } from 'react-icons/lu';
-export default function GalleryListComponent({ galleryTitle, galleryImage }) {
+export default function GalleryListComponent({ galleryTitle, galleryImage, galleryLink }) {
+
     return (
         <div className="galleryCard">
-            <span className='galleryCardLink'><Link href="/gallery/1"><LuView /></Link></span>
+            <span className='galleryCardLink'><Link href={`${galleryLink}`}><LuView /></Link></span>
             <div className="galleryCardInner">
                 <div className="galleryImg">
-                    <img src={galleryImage} />
+                    <Image src={galleryImage} alt="Gallery Images" width={338} height={300} />
                 </div>
                 <div className="galleryDetail">
                     <h2>{galleryTitle}</h2>

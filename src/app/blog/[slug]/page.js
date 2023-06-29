@@ -1,7 +1,10 @@
-export default function founder({params}) {
+import Header from "@/app/components/header";
+
+export default function SingleBlog() {
     return (
-      <main>
-        <h1>Single Blog page {params.slug}</h1>
-      </main>
+        <>
+            <Header pageTitle={"CKD Blog"} />
+            Single Blog
+        </>
     )
-  }
+}

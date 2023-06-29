@@ -27,7 +27,7 @@ export default function Footer() {
             <div className='col-md-4'>
               <div className='footerColumnBox'>
                 <div className='footerLogo'>
-                  <span> <img src='/footerLogo.png' alt="Footer_logo" /></span>
+                  <span> <Image src='/footerLogo.png' alt="Footer_logo" width={123} height={51} /></span>
                   <p className='footerSubtitle'>
                     The establishment of Chief Khalsa Diwan on 30 October 1902 bears testimony to the dreams of some committed stalwarts of the Guru Khalsa Panth.
                   </p>

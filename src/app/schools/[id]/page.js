@@ -1,5 +1,6 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
+import Image from "next/image";
 
 export default function SingleVenture() {
 
@@ -50,7 +51,7 @@ export default function SingleVenture() {
             <Header pageTitle={"Sri Guru Harkrishan Sr. Sec. Public School"} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.png" />
+                    <Image src="/ventureBannerImage.png" alt="Banner" width={1920} height={595} />
                     <div className="ventureBannerContent">
                         <h1>Sri Guru Harkrishan Sr. Sec. Public School</h1>
                         <span className="ventureLocation">(Majitha Road Bypass)</span>
@@ -59,25 +60,25 @@ export default function SingleVenture() {
                 <div className="ventureBannerStip">
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/location.png" alt="icons" />
+                            <Image src="/location.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>Majitha Road Bypass, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/telephone.png" alt="icons" />
+                            <Image src="/telephone.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>0183-2570328, 6239652494</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/email_icon.png" alt="icons" />
+                            <Image src="/email_icon.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>sghps_mrbp@yahoo.com; 20126@cbseshiksha.in</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/Internet.png" alt="icons" />
+                            <Image src="/Internet.png" alt="icons" width={34} height={34} />
                         </div>
                         <span>www.sghpsmajitharoadbypass.edu.in</span>
                     </div>

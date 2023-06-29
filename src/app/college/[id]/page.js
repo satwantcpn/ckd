@@ -1,5 +1,6 @@
 import Header from "@/app/components/header";
 import SingleVentureMemberComp from "@/app/components/singleVentureMemberCom";
+import Image from "next/image";
 
 export default function SingleCollege() {
 
@@ -50,7 +51,7 @@ export default function SingleCollege() {
             <Header pageTitle={"C.K.D. Institute Of Management & Technology"} hideHeaderBanner={'true'} />
             <section className="full_width_section">
                 <div className="ventureBanner">
-                    <img src="/ventureBannerImage.png" />
+                    <Image src="/ventureBannerImage.png" alt="Banner" width={1920} height={595} />
                     <div className="ventureBannerContent">
                         <h1>C.K.D. Institute Of Management & Technology</h1>
                         <span className="ventureLocation">(C.K.D.I.M.T. Amritsar)</span>
@@ -59,25 +60,25 @@ export default function SingleCollege() {
                 <div className="ventureBannerStip">
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/location.png" alt="icons" />
+                            <Image src="/location.png" alt="Icons" width={34} height={34} />
                         </div>
                         <span>C.K.D.I.M.T, Amritsar - 143001</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/telephone.png" alt="icons" />
+                            <Image src="/telephone.png" alt="Icons" width={34} height={34} />
                         </div>
                         <span>0183-2560020, 9876146321</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/email_icon.png" alt="icons" />
+                            <Image src="/email_icon.png" alt="Icons" width={34} height={34} />
                         </div>
                         <span>ckdimtasr2223@gmail.com</span>
                     </div>
                     <div className="stripCol">
                         <div className="stripIcon">
-                            <img src="/Internet.png" alt="icons" />
+                            <Image src="/Internet.png" alt="Icons" width={34} height={34} />
                         </div>
                         <span>www.ckdimt.com</span>
                     </div>

@@ -20,7 +20,6 @@ export default function PublicationComponent({ title, pdfThumb, pdfLink, categor
                     </div>
                     <div className='pubCont'>
                         <h3>{title}</h3>
-                        <BiDownload />
                     </div>
                 </div>
             </div>
