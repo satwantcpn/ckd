@@ -12,6 +12,7 @@ import HomeSlider from './components/homeSlider'
 import Header from './components/header'
 import GalleryListComponent from './components/galleryList'
 import { useEffect } from 'react'
+import BlogListComponent from './components/BlogListComponent'
 
 export default function Home() {
 
@@ -97,34 +98,34 @@ export default function Home() {
   const posts = [
     {
       id: 1,
-      galleryImage: '/gallery3.jpg',
-      galleryTitle: 'Post title will goes here',
-      galleryLink: '/blog/1',
+      image: '/gallery3.jpg',
+      title: 'Post title will goes here',
+      link: '/blog/1',
     },
     {
       id: 2,
-      galleryImage: '/gallery2.jpg',
-      galleryTitle: 'Post title will goes here',
-      galleryLink: '/blog/1',
+      image: '/gallery2.jpg',
+      title: 'Post title will goes here',
+      link: '/blog/1',
     },
     {
       id: 3,
-      galleryImage: '/gallery1.jpg',
-      galleryTitle: 'Post title will goes here',
-      galleryLink: '/blog/1',
+      image: '/gallery1.jpg',
+      title: 'Post title will goes here',
+      link: '/blog/1',
     },
     {
       id: 4,
-      galleryImage: '/gallery1.jpg',
-      galleryTitle: 'Post title will goes here',
-      galleryLink: '/blog/1',
+      image: '/gallery1.jpg',
+      title: 'Post title will goes here',
+      link: '/blog/1',
     }
   ]
 
   return (
     <>
       <Header />
-      <main className={styles.main}>
+      <main className="homePageOuter">
         <HomeSlider slides={slider} />
         <section className='aboutSection'>
           <div className='container'>
@@ -193,9 +194,9 @@ export default function Home() {
                   <div className='serviceMainBox'>
                     <ServiceCard title="Donation" imgName='/donation.png' Description="There are many variations of passages of Lorem Ipsum available." />
                     <ServiceCard title="Log In" imgName='/password.png' Description="There are many variations of passages of Lorem Ipsum available." />
-                    <ServiceCard title="Carrer" imgName='/career.png' Description="There are many variations of passages of Lorem Ipsum available." />
+                    <ServiceCard title="Carrer" imgName='/career.png' Description="There are many variations of passages of Lorem Ipsum available." link="/career" />
                     <ServiceCard title="Fee Payment" imgName='/invoice.png' Description="There are many variations of passages of Lorem Ipsum available." />
-                    <ServiceCard title="Contact Us" imgName='/email.png' Description="There are many variations of passages of Lorem Ipsum available." />
+                    <ServiceCard title="Contact Us" imgName='/email.png' Description="There are many variations of passages of Lorem Ipsum available." link="/contact-us" />
                   </div>
                 </div>
               </div>
@@ -236,11 +237,11 @@ export default function Home() {
                   <div className='counterInrBox'>
                     <div className='counterMainBox'>
                       <CounterNumberBox Number={"500"} title={"Members"} />
-                      <CounterNumberBox Number={"50"} title={"InstituTes"} />
+                      <CounterNumberBox Number={"50"} title={"Institutes"} />
                     </div>
                     <div className='counterMainBox mt-40'>
                       <CounterNumberBox Number={"38000"} title={"Students"} />
-                      <CounterNumberBox Number={"456"} title={"DolorSit Amet"} />
+                      <CounterNumberBox Number={"456"} title={"Ventures"} />
                     </div>
                   </div>
                 </div>
@@ -259,11 +260,11 @@ export default function Home() {
         <section className='postModule'>
           <div className='container'>
             <HeadingC subSmallHeading={"Chief Khalsa Diwan's"} heading={"Latest Posts"} />
-            <div className="row">
+            <div className="row blogListing">
               {
                 posts && posts.map((item, index) => (
                   <div className="col-md-3 mb-4" key={item.id}>
-                    <GalleryListComponent galleryImage={item.galleryImage} galleryTitle={item.galleryTitle} galleryLink={item.galleryLink} />
+                    <BlogListComponent blogTitle={item.title} blogImage={item.image} blogLink={item.link} />
                   </div>
                 ))
               }

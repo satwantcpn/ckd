@@ -1,8 +1,7 @@
-import styles from '../../../style/page.module.css'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram } from 'react-icons/ai';
 import GlobalButton from '../components/button'
 import Link from 'next/link';
 
@@ -38,12 +37,10 @@ export default function Footer() {
                   </div>
 
                   <div className='FooterSocialLink'>
-                    <FontAwesomeIcon icon={faMobileScreen} width={14} />
-                    <FontAwesomeIcon icon={faMobileScreen} width={14} />
-                    <FontAwesomeIcon icon={faMobileScreen} width={14} />
+                    <a href="https://www.facebook.com/" target='_blank'><AiFillFacebook /></a>
+                    <a href="https://twitter.com/" target='_blank'><AiFillTwitterSquare /></a>
+                    <a href="https://www.instagram.com/" target='_blank'><AiFillInstagram /></a>
                   </div>
-
-                  <GlobalButton buttonValue="Donation" color={orange} />
                 </div>
 
               </div>
@@ -68,11 +65,11 @@ export default function Footer() {
               <div className='footerColumnBox'>
                 <p className='ftrHeading'>Important<span> Links</span></p>
                 <ul>
-                  <li> <a href=''> Recruitment </a> </li>
-                  <li> <a href=''> Gratuity Claim form </a> </li>
-                  <li> <a href=''> Govt. Minority Scholarship </a> </li>
-                  <li> <a href=''> Gratuity Claim form </a> </li>
-                  <li> <a href=''> Govt. Minority Scholarship </a> </li>
+                  <li> <a href='#'>Recruitment </a> </li>
+                  <li> <a href='#'>Gratuity Claim form </a> </li>
+                  <li> <a href='#'>Govt. Minority Scholarship </a> </li>
+                  <li> <a href='#'>Gratuity Claim form </a> </li>
+                  <li> <a href='#'>Govt. Minority Scholarship </a> </li>
                 </ul>
               </div>
             </div>
@@ -102,6 +99,11 @@ export default function Footer() {
 
           </div>
         </div>
+      </div>
+      <div className='sidebarSocialIcons'>
+        <a href="https://www.facebook.com/" target='_blank'><AiFillFacebook /> <span>Facebook</span></a>
+        <a href="https://twitter.com/" target='_blank'><AiFillTwitterSquare /> <span>Twitter</span></a>
+        <a href="https://www.instagram.com/" target='_blank'><AiFillInstagram /> <span>Instagram</span></a>
       </div>
     </footer>
 

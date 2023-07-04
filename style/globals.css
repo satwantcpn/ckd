@@ -325,6 +325,10 @@ header.stickyHeader .navContactBar {
   -moz-transform: translateY(20px);
 }
 
+.stickyHeader .navLinkBar ul li>ul {
+  top: 10px
+}
+
 .navLinkBar ul li:hover>ul {
   visibility: visible;
   opacity: 1;
@@ -491,6 +495,10 @@ section.aboutSection {
   padding: 20px 10px;
 }
 
+.serviceCard:hover h3 {
+  color: #ff623e
+}
+
 .serviceMainBox {
   display: flex;
   gap: 10px;
@@ -520,10 +528,10 @@ section.aboutSection {
   transform: scale(1.1);
 }
 
-.serviceTitle p {
+.serviceTitle h3 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 0;
+  margin: 0px;
 }
 
 .serviceMainBox .serviceCard .serviceCardDescription p {
@@ -604,8 +612,8 @@ section.aboutSection {
   background: rgb(43 13 135 / 92%);
   background-image: url(/footerbg.png);
   padding: 70px 0px;
-  margin-top: 70px;
   background-repeat: no-repeat;
+  margin-top: 70px;
 }
 
 .footerAddress {
@@ -669,7 +677,7 @@ p.ftrHeading span {
 .FooterSocialLink {
   color: #fff;
   display: flex;
-  gap: 30px;
+  column-gap: 10px;
   margin: 30px 0px;
 }
 
@@ -966,6 +974,25 @@ p.ftrHeading span {
   width: 100%;
 }
 
+.homeSlider .hmSliderImg {
+  position: relative;
+}
+
+.homeSlider .hmSliderImg::before {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(/light4.png) no-repeat;
+  background-size: auto 149%;
+  background-position: 10px -60px;
+  opacity: 1;
+}
+
+
+
 .sliderContent {
   position: absolute;
   top: 0px;
@@ -1148,6 +1175,7 @@ p.ftrHeading span {
   line-height: 17px;
   color: #545454;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .ventureInfo a {
@@ -2128,6 +2156,7 @@ p.ftrHeading span {
   flex-wrap: wrap;
   align-items: center;
   column-gap: 20px;
+  justify-content: center;
 }
 
 .pubSearch {
@@ -2341,6 +2370,10 @@ p.ftrHeading span {
   color: #424242;
 }
 
+.contactPageBlocks .careerItem h2 {
+  color: #fff;
+}
+
 .fullWidth {
   display: block;
   clear: both;
@@ -2392,7 +2425,8 @@ p.ftrHeading span {
   box-sizing: border-box;
 }
 
-.careerFilter select {
+.careerFilter select,
+.careerSelect select {
   appearance: none;
   display: block;
   clear: both;
@@ -2676,18 +2710,20 @@ p.ftrHeading span {
   height: auto;
   margin-bottom: 30px;
   border: none;
+  background: #1d0368;
 }
 
 body .contactPageBlocks .careerItem h2 {
   font-size: 24px;
   line-height: 30px;
+  color: #fff;
 }
 
 .contactPageBlocks .careerItem .contactDetail {
   display: block;
   clear: both;
   width: 100%;
-  color: #545454;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
@@ -2772,4 +2808,1371 @@ body .contactPageBlocks .careerItem h2 {
 
 .contactPageBlocks:last-child .careerItem {
   margin-bottom: 0px;
+}
+
+.fullBlockLinkOuter {
+  position: relative;
+}
+
+.fullBlockLinkOuter .fullBlockLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+}
+
+.top-to-btm {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 150;
+  background: #ff9933;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.top-to-btm svg {
+  width: 25px;
+  height: auto;
+  fill: #fff;
+}
+
+.FooterSocialLink a {
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+  outline: none;
+  text-decoration: none;
+}
+
+.sidebarSocialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sidebarSocialIcons a {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: start;
+  background: rgb(29 3 104 / 100%);
+  color: #fff;
+  font-size: 24px;
+  overflow: hidden;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.sidebarSocialIcons a span {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  font-size: 14px;
+  position: absolute;
+  left: 45px;
+  text-transform: uppercase;
+}
+
+.sidebarSocialIcons a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebarSocialIcons a:hover {
+  width: 150px;
+  background: #ff9933;
+}
+
+.historyPage h3 {
+  display: block;
+  clear: both;
+  width: 100%;
+  color: #280B7D;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.blogListing .galleryCard {
+  text-align: left;
+}
+
+.blogListing .galleryCard .galleryDetail h2 {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blogListing .galleryCard {
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.blogListing .galleryCard .galleryImg img {
+  border-radius: 0px;
+}
+
+.blogListing .galleryCard .galleryDetail {
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+.blogListing .galleryCard .galleryImg {
+  max-height: 180px;
+}
+
+.blogListing .blogDate {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sp_featureImage {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.sp_featureImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.spRecentBlog {
+  display: block;
+  clear: both;
+  width: 100%;
+  background: #F6F8FF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.spRecentBlog h4 {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0px 0px 5px;
+  color: #280B7D;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.spRecentBlog h4::after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 2px;
+  background: #B2C4FF;
+  max-width: 250px;
+  margin: 10px 0px 30px;
+}
+
+.spRecentBlog ul {
+  display: block;
+  clear: both;
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.spRecentBlog ul li {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.spRecentBlog ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.spRecentBlog ul li .recentBlogItems {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.recentBlogItems .rbImage {
+  display: inline-block;
+  width: 100%;
+  max-width: 100px;
+  overflow: hidden;
+}
+
+.recentBlogItems .rbImage img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.recentBlogItems .rbContent {
+  display: inline-block;
+  width: calc(100% - 120px);
+  margin-left: auto;
+}
+
+.spMeta {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15px 0px;
+  column-gap: 30px;
+}
+
+.spMeta .spMetaItem {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.spMetaIcon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background: #FFE6D1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.spMetaIcon svg {
+  width: 100%;
+  height: auto;
+  max-width: 18px;
+}
+
+.homePageOuter .blogListing .galleryCard .galleryDetail {
+  padding: 0px;
+}
+
+
+/****--- Yash ---*****/
+.center {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCheckbox input:checked~.checkmark {
+  border-radius: 50px;
+}
+
+.customCheckbox .checkmark {
+  border-radius: 50px;
+}
+
+.menuButton a {
+  display: none;
+}
+
+@media screen and (min-width: 1584px) and (max-width: 1880px) {
+
+  .sliderThumbs img {
+    max-width: 190px;
+    width: 190px;
+  }
+
+  .sliderThumbs {
+    gap: 15px 5px;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (min-width: 1535px) and (max-width: 1583px) {
+
+  .sliderThumbs img {
+    max-width: 183px;
+    width: 190px;
+  }
+
+  .sliderThumbs {
+    gap: 15px 5px;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1412px) {
+
+  .navContactBar ul,
+  .navLinkBar ul {
+    column-gap: 8px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+
+  .navContactBar ul,
+  .navLinkBar ul {
+    column-gap: 2px;
+  }
+
+  .navContactBar ul li:not(:last-child) {
+    padding-right: 0px;
+  }
+
+  .sliderContentInner .slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .navButton a {
+    width: 100px;
+  }
+
+  .navLinkBar ul>li:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .navContactBar ul li a,
+  .navLinkBar>ul>li>a {
+    font-size: 0.8rem;
+  }
+
+  .sliderThumbs .sliderThumbOutr:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 20px;
+  }
+
+  .sliderThumbs img {
+    max-width: 145px;
+    width: 145px;
+  }
+
+  .sliderThumbs {
+    gap: 10px 10px;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 1.5rem;
+  }
+
+  .sliderContentInner .slidrText {
+    font-size: 0.9rem;
+    line-height: 22px;
+  }
+
+  .sliderThumbs .sliderThumbOutr span {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1200px) {
+
+  .headerBanner {
+    margin-top: 90px;
+  }
+
+  .galleryDetail h2 {
+    font-size: 14px;
+  }
+
+  .founderCard .founderCardDetail h2 {
+    font-size: 18px;
+  }
+
+  .counterInrBox {
+    gap: 9px;
+  }
+
+  .sliderThumbs .sliderThumbOutr span {
+    text-align: center;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 10px;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 22px;
+  }
+
+  .logoBox img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    min-width: 280px;
+  }
+
+  .navContactBar ul li a,
+  .navLinkBar>ul>li>a {
+    font-size: 14px;
+  }
+
+  .navLinkBar ul>li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .navContactBar {
+    display: none;
+  }
+
+  .sliderThumbs img {
+    max-width: 150px;
+    width: 150px;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1039px) {
+
+  .headerBanner {
+    margin-top: 90px;
+  }
+
+  .sliderThumbs img {
+    max-width: 120px;
+  }
+
+  .navContactBar ul li a,
+  .navLinkBar>ul>li>a {
+    font-size: 12px;
+  }
+
+  .sliderContentWrap {
+    padding: 20px;
+  }
+
+  .navContactBar {
+    display: none;
+  }
+
+  .serviceMainBox {
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+  }
+
+  .counterInrBox {
+    gap: 7px;
+  }
+
+  .sliderContentInner .slidrText {
+    display: block;
+    clear: both;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .sliderThumbs .sliderThumbOutr span {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 0px;
+    font-size: 18px;
+  }
+
+  .homeSlider .hmSliderImg img {
+    min-height: auto;
+  }
+
+  .sliderContentInner {
+    padding: 110px 30px 50px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:first-child {
+    margin-left: 0%;
+  }
+
+  .navButton a {
+    width: 100px;
+  }
+
+  .navLinkBar ul>li:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .sliderThumbs .sliderThumbOutr:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 20px;
+  }
+
+  .sliderThumbs {
+    gap: 10px 2px;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 1.4rem;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 1.1rem;
+    margin-bottom: 9px;
+  }
+
+  .sliderThumbs .sliderThumbOutr span {
+    font-size: 15px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+  .pubFilter {
+    margin: 0px auto;
+  }
+
+  .publicationFilter {
+    row-gap: 10px;
+  }
+
+  .pubSearch {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .ventureInfo {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+
+  .ventureCard {
+    padding: 6px;
+  }
+
+  .headerBanner {
+    margin-top: 90px;
+  }
+
+  .logoBox img {
+    width: 100%;
+    max-width: 4rem;
+    height: auto;
+    min-width: 19rem;
+  }
+
+  .smallMenu {
+    justify-content: end !important;
+  }
+
+  .serviceMainBox {
+    flex-wrap: wrap;
+  }
+
+  .ventureImgBox img {
+    min-width: 200px;
+  }
+
+  .venturesinrBx {
+    flex-wrap: wrap;
+  }
+
+  .aboutUsOtrBox .headingBar h1 {
+    color: #280B7D;
+    font-size: 2.4rem;
+    line-height: 34px;
+  }
+
+  .sliderContentInner {
+    padding: 120px 30px 50px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:last-child {
+    margin: 0px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:nth-child(5) {
+    margin-right: 0%;
+  }
+
+  .sliderThumbs .sliderThumbOutr:first-child {
+    margin-left: 0%;
+  }
+
+  .sliderContentInner .slidrText {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 10px;
+  }
+
+  .sliderThumbs {
+    gap: 20px 20px;
+    margin-top: 20px;
+  }
+
+  body .sliderContentInner .slidrHeading {
+    font-size: 27px;
+    line-height: 14px;
+  }
+
+  body .sliderThumbs img {
+    width: 120px;
+  }
+
+  body .sliderThumbs img {
+    width: 170px;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+
+  .contactFormWrap {
+    margin-bottom: 30px;
+  }
+
+  .carerrListCont {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contactPageBlocks .careerLogo {
+    margin: auto;
+  }
+
+  .publicationFilter {
+    row-gap: 10px;
+    justify-content: end;
+  }
+
+  .pubSearch {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .pubFilter {
+    margin: 0px auto;
+  }
+
+
+  .headerBanner {
+    margin-top: 90px;
+  }
+
+  .smallMenu {
+    display: flex;
+    justify-content: end !important;
+  }
+
+  .logoBox img {
+    width: 100%;
+    max-width: 4rem;
+    height: auto;
+    min-width: 19rem;
+  }
+
+  .galleryCard {
+    padding: 0px;
+  }
+
+  .founderCard .founderCardDetail h3 {
+    font-size: 19px;
+  }
+
+  .founderCard .founderCardDetail h2 {
+    font-size: 20px;
+  }
+
+  .ventureBannerContent {
+    align-items: center;
+    height: 100%;
+  }
+
+  .ventureBannerContent.ob_heading h1 {
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  .ventureBanner {
+    margin-top: 36%;
+  }
+
+  .headerBanner .headingBar h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .headerBanner {
+    min-height: 200px;
+  }
+
+  .headerBanner .headingBar .subSmallHeading {
+    color: #fff;
+    font-size: 28px;
+    line-height: 10px;
+  }
+
+  p.ftrHeading {
+    height: auto;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .headingBarL {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .ventureCardsBox {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .ventureTitleBox p {
+    line-height: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .counterInrBox {
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sliderContentInner {
+    padding: 20px 5px 50px;
+  }
+
+  .sliderContentWrap {
+    display: block;
+  }
+
+  .homeSlider .hmSliderImg img {
+    min-height: auto;
+    margin-top: 5.8rem;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 11px;
+    line-height: 0px;
+    margin-bottom: 12px;
+  }
+
+  .sliderContentInner .slidrText {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 7px;
+  }
+
+  .sliderContentInner .slogan {
+    font-size: 16px;
+    line-height: 14px;
+    margin-top: 0px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:first-child {
+    margin-left: 0px;
+  }
+
+  .sliderThumbs img {
+    width: 100%;
+    max-width: 110px;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 10px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:nth-child(5) {
+    margin-right: 0%;
+  }
+
+  .sliderThumbs {
+    justify-content: initial;
+    display: none;
+  }
+
+  .headingBarL h1,
+  .headingBar h1 {
+    font-size: 25px;
+  }
+
+  .aboutUsOtrBox .headingBar h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .aboutUsText {
+    padding: 0px 0px;
+  }
+
+  .aboutUsText p {
+    font-size: 12px;
+  }
+
+  .aboutUsOtrBox .headingBar {
+    margin: 45px 0px 0px;
+  }
+
+  .aboutUsTextImg img {
+    max-width: 140px;
+    margin-top: 30px;
+  }
+
+  .aboutUsOtrBox {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .globalButton {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .venturesinrBx {
+    gap: 0% 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .serviceSection {
+    margin-top: 10px;
+  }
+
+  .serviceMainBox {
+    flex-wrap: wrap;
+  }
+
+  .serviceCard {
+    padding: 5px 10px;
+    width: 48%;
+  }
+
+  .serviceTitle img {
+    transform: scale(1.9);
+  }
+
+  .PresidentMessageImgBox img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .headingBar {
+    margin: 15px 0px;
+  }
+
+  .serviceOtrBox .headingBar {
+    margin-top: 20px;
+  }
+
+  .PresidentMessageSection {
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+
+  .presidentName {
+    font-size: 19px;
+  }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .contactFormWrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contactPageBlocks .careerLogo {
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .sugBoxImg {
+    width: 70px;
+  }
+
+  .contactSuggBocCont p {
+    font-size: 12.9px;
+    line-height: 17px;
+  }
+
+  .contactSuggbox {
+    padding: 20px 10px;
+    margin: 30px 0px;
+    column-gap: 0;
+    justify-content: space-around;
+  }
+
+  .resetBtn {
+    padding: 0px 15px;
+    line-height: 31px;
+    font-size: 14px;
+  }
+
+  .customCheckbox {
+    font-size: 14px;
+  }
+
+  .pubFilter ul {
+    column-gap: 20px;
+    justify-content: space-between;
+    margin: 15px 0px;
+    row-gap: 10px;
+  }
+
+  .carerrListCont {
+    text-align: center;
+  }
+
+  .carerrListCont span {
+    font-size: 0.9rem;
+  }
+
+  .carerrListCont .careerTags {
+    justify-content: center;
+  }
+
+  .careerLogo {
+    margin: auto;
+  }
+
+  .careerSelect {
+    font-size: 12px;
+  }
+
+  .careerFilter {
+    justify-content: flex-start;
+    border-radius: 15px;
+    padding: 12px 5px;
+    gap: 10px;
+  }
+
+  .headerBanner {
+    margin-bottom: 0px;
+  }
+
+  .publicationFilter {
+    padding: 10px 10px;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+
+  .customCheckbox input:checked~.checkmark {
+    border-radius: 50px;
+  }
+
+  .customCheckbox .checkmark {
+    border-radius: 50px;
+  }
+
+  .customCheckbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 12px;
+  }
+
+  .pubSearch {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .headerBanner {
+    margin-top: 90px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  .logoBox img {
+    width: 100%;
+    min-width: 11rem;
+    height: auto;
+    max-width: 34rem;
+  }
+
+  .footer {
+    padding: 70px 0px 0px 0px;
+  }
+
+  .founderCard .founderCardDetail h3 {
+    font-size: 19px;
+  }
+
+  .founderCard .founderCardDetail h2 {
+    font-size: 20px;
+  }
+
+  .ventureBannerContent {
+    align-items: center;
+    height: 100%;
+  }
+
+  .ventureBannerContent.ob_heading h1 {
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  .ventureBanner {
+    margin-top: 36%;
+  }
+
+  .headerBanner .headingBar h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .headerBanner {
+    min-height: 200px;
+  }
+
+  .headerBanner .headingBar .subSmallHeading {
+    color: #fff;
+    font-size: 28px;
+    line-height: 10px;
+  }
+
+  p.ftrHeading {
+    height: auto;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .headingBarL {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .ventureCardsBox {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .ventureTitleBox p {
+    line-height: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .counterInrBox {
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sliderContentInner {
+    padding: 20px 5px 50px;
+  }
+
+  .sliderContentWrap {
+    padding: 0px;
+  }
+
+  .homeSlider .hmSliderImg img {
+    min-height: auto;
+    margin-top: 5.7rem;
+  }
+
+  .sliderContentInner .slidrHeading {
+    font-size: 11px;
+    line-height: 0px;
+    margin-bottom: 12px;
+  }
+
+  .sliderContentInner .slidrText {
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 7px;
+  }
+
+  .sliderContentInner .slogan {
+    font-size: 16px;
+    line-height: 14px;
+    margin-top: 0px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:first-child {
+    margin-left: 0px;
+  }
+
+  .sliderThumbs img {
+    width: 100%;
+    max-width: 110px;
+  }
+
+  .sliderThumbs .sliderThumbOutr {
+    border-radius: 10px;
+  }
+
+  .sliderThumbs .sliderThumbOutr:nth-child(5) {
+    margin-right: 0%;
+  }
+
+  .sliderThumbs {
+    justify-content: initial;
+    display: none;
+  }
+
+  .headingBarL h1,
+  .headingBar h1 {
+    font-size: 25px;
+  }
+
+  .aboutUsOtrBox .headingBar h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .aboutUsText {
+    padding: 0px 0px;
+  }
+
+  .aboutUsText p {
+    font-size: 12px;
+  }
+
+  .aboutUsOtrBox .headingBar {
+    margin: 45px 0px 0px;
+  }
+
+  .aboutUsTextImg img {
+    max-width: 140px;
+    margin-top: 30px;
+  }
+
+  .aboutUsOtrBox {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .globalButton {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .venturesinrBx {
+    gap: 5% 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .serviceSection {
+    margin-top: 10px;
+  }
+
+  .serviceMainBox {
+    flex-wrap: wrap;
+  }
+
+  .serviceCard {
+    padding: 5px 10px;
+  }
+
+  .serviceTitle img {
+    transform: scale(1.9);
+  }
+
+  .PresidentMessageImgBox img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .headingBar {
+    margin: 15px 0px;
+  }
+
+  .serviceOtrBox .headingBar {
+    margin-top: 20px;
+  }
+
+  .PresidentMessageSection {
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+
+  .presidentName {
+    font-size: 19px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .navButton {
+    display: none;
+  }
+
+  .navLinkBar {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .navLinkBar ul li a {
+    color: #000;
+    padding: 10px 0px;
+  }
+
+  .navLinkBar ul li {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .navLinkBar ul>li:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .smallMenu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobilemenudrawer {
+    position: absolute;
+    display: none;
+  }
+
+  .smallMenu:hover .mobilemenudrawer {
+    display: block !important;
+    width: 250px;
+    box-shadow: 2px 0px 4px 7px #8b8b8b42;
+    top: 70px;
+    right: 20px;
+  }
+
+  .menuButton {
+    background: transparent;
+    padding: 10px;
+    width: 26%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .menuButton p {
+    background: #fff;
+    height: 1%;
+    padding: 3%;
+    border-radius: 10px;
+    margin: 5px;
+    width: 30px;
+  }
+
+  .menuButton a {
+    display: block;
+    color: #fff;
+  }
+
+  .BigMenu {
+    display: none;
+  }
+
+  .smallMenu .navContactBar {
+    display: none;
+  }
+
+  .smallMenu .navContactBar ul,
+  .navLinkBar ul {
+    display: contents;
+    column-gap: 20px;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .BigMenu {
+    display: none;
+  }
+
+  .nav__menu-bar {
+    display: none;
+  }
+
+  .nav__menu-list {
+    position: unset;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 24px;
+    align-items: center;
+  }
+
+  .nav__link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    bottom: -16px;
+    left: 0;
+    background-color: black;
+    transition: all 0.2s;
+  }
+
+  .nav__link:hover:before {
+    width: 100%;
+  }
 }

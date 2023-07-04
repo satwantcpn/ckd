@@ -26,7 +26,7 @@ export default function SingleJob({ params }) {
                                 </div>
                                 <div className="jobReqBlock">
                                     <div className="jobReqIcon">
-                                        <Image src='/locationIcon.svg' alt="Location Icon" width={27} height={27} />
+                                        <Image src='/certificate.svg' alt="Location Icon" width={27} height={27} />
                                     </div>
                                     <div className="jobReqCont">
                                         <h3>Qualification</h3>
@@ -35,7 +35,7 @@ export default function SingleJob({ params }) {
                                 </div>
                                 <div className="jobReqBlock">
                                     <div className="jobReqIcon">
-                                        <Image src='/locationIcon.svg' alt="Location Icon" width={27} height={27} />
+                                        <Image src='/calendar.svg' alt="Location Icon" width={27} height={27} />
                                     </div>
                                     <div className="jobReqCont">
                                         <h3>Closing Date</h3>
@@ -44,7 +44,7 @@ export default function SingleJob({ params }) {
                                 </div>
                                 <div className="jobReqBlock">
                                     <div className="jobReqIcon">
-                                        <Image src='/locationIcon.svg' alt="Location Icon" width={27} height={27} />
+                                        <Image src='/calendar.svg' alt="Location Icon" width={27} height={27} />
                                     </div>
                                     <div className="jobReqCont">
                                         <h3>Posting Date</h3>

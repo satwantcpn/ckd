@@ -224,11 +224,11 @@ export default function PublicationPage() {
     return (
         <>
             <Header pageTitle={"Career"} />
-            <section className="careerListing mt-4 pt-4 lineBg">
+            <section className="careerListing lineBg">
                 <div className="container">
-                    <div className="row mb-4 pb-4">
+                    <div className="row pb-4">
                         <div className="col-md-12">
-                            <span className="totalJobs">Total Open Jobs: {careerList.length}</span>
+                            <span className="totalJobs">Jobs Open: {careerList.length}</span>
                         </div>
                     </div>
                     <div className="row mb-4 pb-4 justify-content-center">

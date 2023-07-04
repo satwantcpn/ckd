@@ -5,25 +5,28 @@ export default function PublicationPage() {
     return (
         <>
             <Header pageTitle={"Contact Us"} />
-            <section className="contactUsPage lineBg mb-4 pb-4">
-                <div className="container">
+            <section className="contactUsPage lineBg mb-4 pb-4 pt-4">
+                <div className="container pt-4">
                     <div className="row gx-5 mb-4 pb-4 align-items-center">
-                        <div className="col-md-6">
+                        <div className="col-md-12 col-lg-6 col-md-6">
                             <div className="contactFormWrap">
                                 <h2>Get In Touch</h2>
-                                <p>Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours.</p>
+                                <p>Fill the form below. call us, you can also email us or drop by anytime, we endeavour to answer all enquiries within 24 hours.</p>
                                 <form>
                                     <div className="row contactForm">
                                         <div className="col-md-6 mb-4">
-                                            <input type="text" placeholder="Your Name" name="name" />
+                                            <input type="text" placeholder="First Name" name="firstName" />
                                         </div>
                                         <div className="col-md-6 mb-4">
-                                            <input type="email" placeholder="Your Email Address" name="email" />
+                                            <input type="text" placeholder="Last Name" name="lastName" />
                                         </div>
                                         <div className="col-md-6 mb-4">
-                                            <input type="number" placeholder="Your Phone" name="phone" />
+                                            <input type="email" placeholder="Email Address" name="email" />
                                         </div>
                                         <div className="col-md-6 mb-4">
+                                            <input type="number" placeholder="Phone" name="phone" />
+                                        </div>
+                                        <div className="col-md-12 mb-4">
                                             <input type="text" placeholder="Subject" name="subject" />
                                         </div>
                                         <div className="col-md-12 mb-4">
@@ -36,7 +39,7 @@ export default function PublicationPage() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-12 col-lg-6 col-md-6">
                             <ContactBlock iconUrl="/locationIconContact.svg" title="Physical Address" address1="Chief Khalsa Diwan Charitable Society," address2="G.T. Road, Amritsar - 143001, Punjab (India)" />
                             <ContactBlock iconUrl="/contactPhoneIcon.svg" title="Call Us" phone1="+91-183-2228771" phone2="+91-6283282075 (Head Office)" phone3="+91-6283282077 (Director Office)" />
                             <ContactBlock iconUrl="/contactMailIcon.svg" title="Email Us" email="info@chiefkhalsadiwan.com" />

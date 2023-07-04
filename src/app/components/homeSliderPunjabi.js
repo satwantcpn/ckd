@@ -29,7 +29,7 @@ export default function HomeSliderPunjabi({ slides }) {
             <div className="sliderContent">
                 <div className="sliderContentInner">
                     <div className="row align-items-end">
-                        <div className="col-md-7">
+                        <div className="col-md-12 col-lg-7 col-xl-6">
                             <div className="sliderContentWrap">
                                 <span className="slidrHeading">{activeSlideHeading}</span>
                                 {activeSlideText && <span className="slidrText">{activeSlideText} <span className="kesriColor">{activeSlideText1}</span></span>}
@@ -37,7 +37,7 @@ export default function HomeSliderPunjabi({ slides }) {
                                 <span className="slogan">{activeslogan}</span>
                             </div>
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-12 col-lg-5 col-xl-6">
                             <div className="sliderThumbs">
                                 {
                                     slides && slides.map((item, index) => (

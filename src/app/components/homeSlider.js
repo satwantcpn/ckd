@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function HomeSlider({ slides }) {
     const [activeSlideImg, setActiveSlideImg] = useState('/slide1.png')
@@ -20,6 +20,15 @@ export default function HomeSlider({ slides }) {
         setActiveSlideText3('')
     }
 
+    useEffect(() => {
+        setActiveSlideImg('/slide1.png')
+        setActiveSlideText('Stalwarts of Guru Khalsa Panth held opening session of')
+        setActiveSlideText1('"CHIEF KHALSA DIWAN"')
+        setActiveSlideText2('With their vision a commitment was made.')
+        setActiveSlideText3('LET SEE WHERE IT IS TODAY....')
+        setActiveSlideHeading('30th Oct 1902 Malwai Bunga Sri Darbar Sahib')
+    }, [])
+
     return (
         <section className="homeSlider">
             <div className="hmSliderImg">
@@ -28,7 +37,7 @@ export default function HomeSlider({ slides }) {
             <div className="sliderContent">
                 <div className="sliderContentInner">
                     <div className="row align-items-end">
-                        <div className="col-md-7">
+                        <div className="col-md-12 col-lg-7 col-xl-6">
                             <div className="sliderContentWrap">
                                 <span className="slidrHeading">{activeSlideHeading}</span>
                                 {activeSlideText && <span className="slidrText">{activeSlideText} <span className="kesriColor">{activeSlideText1}</span></span>}
@@ -36,7 +45,7 @@ export default function HomeSlider({ slides }) {
                                 <span className="slogan">{activeslogan}</span>
                             </div>
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-12 col-lg-5 col-xl-6">
                             <div className="sliderThumbs">
                                 {
                                     slides && slides.map((item, index) => (

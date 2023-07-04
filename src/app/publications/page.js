@@ -4,6 +4,7 @@ import Header from "../components/header";
 import PublicationComponent from "../components/publicationComponent";
 
 import { useState, useEffect, useMemo } from "react";
+import SingleVentureMemberComp from "../components/singleVentureMemberCom";
 
 export default function PublicationPage() {
     let pubArray = [
@@ -196,15 +197,61 @@ export default function PublicationPage() {
             </button>
         ));
     };
+
     const resetFilter = (e) => {
         e.preventDefault()
         setSelectedCategory('')
         setSearchVal('')
     }
 
+    const publisherList = [
+        {
+            id: 1,
+            memberImage: '/m1.jpg',
+            memberName: 'Publisher Name',
+            highlight: false
+        },
+        {
+            id: 2,
+            memberImage: '/m2.jpg',
+            memberName: 'Publisher Name',
+            highlight: false
+        },
+        {
+            id: 3,
+            memberImage: '/m3.jpg',
+            memberName: 'Publisher Name',
+            highlight: false
+        },
+        {
+            id: 4,
+            memberImage: '/m2.jpg',
+            memberName: 'Publisher Name',
+            highlight: false
+        },
+        {
+            id: 5,
+            memberImage: '/m3.jpg',
+            memberName: 'Publisher Name',
+            highlight: false
+        }
+    ]
+
     return (
         <>
             <Header pageTitle={"Publications"} />
+            <section className="full_width_section mtop50">
+                <div className="container">
+                    <div className="sVMemberList">
+                        {
+                            publisherList && publisherList.map((member) => (
+                                <SingleVentureMemberComp key={member.id} memberImage={member.memberImage} memberName={member.memberName} hideSep={true} />
+                            ))
+                        }
+
+                    </div>
+                </div>
+            </section>
             <section className="full_width_section mt-4 pt-4 lineBg">
                 <div className="container">
                     <div className="row mb-4">

@@ -169,6 +169,7 @@ export default function AllMembers() {
     const [memberData, setMemberData] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
     const [searchVal, setSearchVal] = useState('')
+    const [searchName, setSearchName] = useState('')
     const [selectedCity, setSelectedCity] = useState();
 
     useEffect(() => {
@@ -185,12 +186,15 @@ export default function AllMembers() {
         else if (searchVal) {
             return memberData.filter((item) => item.title.toLowerCase().includes(searchVal.toLowerCase()))
         }
+        else if (searchName) {
+            return memberData.filter((item) => item.title.toLowerCase().includes(searchName.toLowerCase()))
+        }
         else {
             return memberData;
         }
     }
 
-    let filteredMemberList = useMemo(getFilteredList, [selectedCity, memberData, searchVal]);
+    let filteredMemberList = useMemo(getFilteredList, [selectedCity, memberData, searchVal, searchName]);
 
     const itemsPerPage = 12;
     filteredMemberList.sort((a, b) => a.title.localeCompare(b.title))
@@ -233,6 +237,7 @@ export default function AllMembers() {
         e.preventDefault()
         setSelectedCity('')
         setSearchVal('')
+        setSearchName('')
     }
     return (
         <>
@@ -240,10 +245,14 @@ export default function AllMembers() {
             <main className="mt-4 pt-4 lineBg">
                 <div className="container pt-4">
                     <div className="row mb-4 pb-4 justify-content-center">
-                        <div className="col-md-7">
+                        <div className="col-md-10">
                             <div className="careerFilter">
                                 <div className="pubSearch">
                                     <input type="text" placeholder="Search..." value={searchVal} onChange={(e) => setSearchVal(e.target.value)} />
+                                    <Image src='/searchIcon.svg' alt="Search Icon" width={15} height={15} />
+                                </div>
+                                <div className="pubSearch">
+                                    <input type="text" placeholder="Search By Name" value={searchName} onChange={(e) => setSearchName(e.target.value)} />
                                     <Image src='/searchIcon.svg' alt="Search Icon" width={15} height={15} />
                                 </div>
                                 <div className="careerSelect">
@@ -276,7 +285,7 @@ export default function AllMembers() {
                                 <div className="memberPopupWrap">
                                     <div className="memberPopupHeader">
                                         <h3>Dr. SARBJIT SINGH CHHINA</h3>
-                                        <span className='memberPopupClose' onClick={memberPopClose}><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.707107" y1="1.29289" x2="14.2205" y2="14.8063" stroke="black" stroke-width="2" /><line x1="14.0342" y1="0.696796" x2="0.717856" y2="14.4044" stroke="black" strokeWidth="2" /></svg></span></div>
+                                        <span className='memberPopupClose' onClick={memberPopClose}><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.707107" y1="1.29289" x2="14.2205" y2="14.8063" stroke="black" strokeWidth="2" /><line x1="14.0342" y1="0.696796" x2="0.717856" y2="14.4044" stroke="black" strokeWidth="2" /></svg></span></div>
                                     <div className='memberItem'>
                                         <div className='row'>
                                             <div className='col-md-4 memberItemRight'>
